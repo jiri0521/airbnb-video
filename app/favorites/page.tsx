@@ -27,6 +27,7 @@ const ListingPage = async () => {
       <FavoritesClient
         listings={listings}
         currentUser={currentUser}
+        
       />
     </ClientOnly>
   );

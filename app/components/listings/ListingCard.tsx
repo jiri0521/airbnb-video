@@ -12,28 +12,27 @@ import HeartButton from "../HeartButton";
 import Button from "../Button";
 import ClientOnly from "../ClientOnly";
 import { ja } from 'date-fns/locale';
+import { createDecipheriv } from "crypto";
 
 interface ListingCardProps {
-  title: string;
+  title: string | null;
   data: SafeListing;
   reservation?: SafeReservation;
   onAction?: (id: string) => void;
   disabled?: boolean;
   actionLabel?: string;
   actionId?: string;
-  createdAt: Date;
+  createdAt: Date | null;
   currentUser?: SafeUser | null
 };
 
 const ListingCard: React.FC<ListingCardProps> = ({
-  title,
   data,
   reservation,
   onAction,
   disabled,
   actionLabel,
   actionId = '',
-  createdAt,
   currentUser,
 }) => {
   const router = useRouter();
@@ -75,9 +74,9 @@ const ListingCard: React.FC<ListingCardProps> = ({
   }, [reservation]);
   
 
-  const date_createdAt = data.createdAt;
-  const parsedDate = parseISO(date_createdAt);
-  const formattedDate = format(parsedDate, "yyyy年M月d日", { locale: ja });
+  //const date_createdAt = data.createdAt;
+  //const parsedDate = parseISO(date_createdAt);
+  //const formattedDate = format(parsedDate, "yyyy年M月d日", { locale: ja });
   
   return (
     <div 
@@ -128,7 +127,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           {reservationDate || data.category}
         </div>
         <div className="font-light text-neutral-500">
-          投稿日:{formattedDate}
+          投稿日:{data.createdAt}
         </div>
         <div className="flex flex-row items-center gap-1">
           <div className="font-semibold">

@@ -1,8 +1,5 @@
 'use client';
 
-
-
-
 import { toast } from "react-hot-toast";
 import axios from "axios";
 import { useCallback, useState } from "react";
@@ -71,6 +68,8 @@ const TripsClient: React.FC<TripsClientProps> = ({
             disabled={deletingId === reservation.id}
             actionLabel="予約をキャンセル"
             currentUser={currentUser}
+            title={null}
+            createdAt={null}
           />
         ))}
       </div>

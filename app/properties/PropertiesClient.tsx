@@ -1,8 +1,5 @@
 'use client';
 
-
-
-
 import { toast } from "react-hot-toast";
 import axios from "axios";
 import { useCallback, useState } from "react";
@@ -70,7 +67,9 @@ const PropertiesClient: React.FC<PropertiesClientProps> = ({
             disabled={deletingId === listing.id}
             actionLabel="リストから削除"
             currentUser={currentUser}
-          />
+             title={null}
+             createdAt={null}
+             />
         ))}
       </div>
     </Container>

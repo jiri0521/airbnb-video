@@ -69,7 +69,7 @@ return(
             actionLabel="ゲストの予約をキャンセルします"
             createdAt={reservation.listing}
             currentUser={currentUser} 
-            title={""}
+            title={null}
             />
         ))}
       </div>

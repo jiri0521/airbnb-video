@@ -8,7 +8,6 @@ interface FavoritesClientProps {
   listings: SafeListing[],
   currentUser?: SafeUser | null,
 }
-
 const FavoritesClient: React.FC<FavoritesClientProps> = ({
   listings,
   currentUser
@@ -36,7 +35,9 @@ const FavoritesClient: React.FC<FavoritesClientProps> = ({
           <ListingCard
             currentUser={currentUser}
             key={listing.id}
-            data={listing}
+            data={listing} 
+            title={null}
+            createdAt={null}
           />
         ))}
       </div>
