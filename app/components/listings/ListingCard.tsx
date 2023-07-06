@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useCallback, useMemo } from "react";
-import { format, parseISO } from 'date-fns';
+import { format, isValid, parseISO } from 'date-fns';
 
 import useCountries from "@/app/hooks/useCountries";
 import { SafeListing, SafeReservation, SafeUser } from "@/app/types";
@@ -73,10 +73,20 @@ const ListingCard: React.FC<ListingCardProps> = ({
     return `${formattedStart} ~ ${formattedEnd}`;
   }, [reservation]);
   
+  try {
+  const createdAt = data.createdAt;
+  const parsedDate = parseISO(createdAt);
 
-  //const date_createdAt = data.createdAt;
-  //const parsedDate = parseISO(date_createdAt);
-  //const formattedDate = format(parsedDate, "yyyy年M月d日", { locale: ja });
+  if (isValid(parsedDate)) {
+  const formattedDate = format(parsedDate, "yyyy年M月d日", { locale: ja });
+  }
+  else {
+    throw new Error('Invalid date');
+  }
+} catch (error) {
+  // パースに失敗した場合のエラーハンドリング
+  console.error('Failed to parse date:', error);
+}
   
   return (
     <div 
@@ -127,7 +137,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           {reservationDate || data.category}
         </div>
         <div className="font-light text-neutral-500">
-          投稿日:{data.createdAt}
+          投稿日:
         </div>
         <div className="flex flex-row items-center gap-1">
           <div className="font-semibold">

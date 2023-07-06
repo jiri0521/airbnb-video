@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-    "postinstall": "prisma generate"
+    
   },
   "dependencies": {
     "@date-io/date-fns": "^2.16.0",
