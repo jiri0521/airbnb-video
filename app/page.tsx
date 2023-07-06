@@ -14,6 +14,7 @@ const Home = async ( {searchParams}: HomeProps ) => {
   const listings = await getListings(searchParams);
   const currentUser = await getCurrentUser();
 
+   try {
   if (listings.length === 0) {
     return(
       <ClientOnly>
@@ -21,6 +22,11 @@ const Home = async ( {searchParams}: HomeProps ) => {
       </ClientOnly>
     )
   }
+}
+catch (error) {
+  // パースに失敗した場合のエラーハンドリング
+  console.error('Failed to searchParams,:', error);
+}
 
   return (
    <ClientOnly>
