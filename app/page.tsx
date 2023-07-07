@@ -14,20 +14,14 @@ const Home = async ( {searchParams}: HomeProps ) => {
   const listings = await getListings(searchParams);
   const currentUser = await getCurrentUser();
 
-   try {
   if (listings.length === 0) {
     return(
       <ClientOnly>
         <EmptyState showReset />
       </ClientOnly>
     )
-  }
-}
-catch (error) {
-  // パースに失敗した場合のエラーハンドリング
-  console.error('Failed to searchParams,:', error);
-}
-
+    }
+try {
   return (
    <ClientOnly>
     <Container>
@@ -53,13 +47,16 @@ catch (error) {
               createdAt={null}            />
           )
         })}
-        
+   
       </div>
       
-    </Container>
-   </ClientOnly>
-    
-  )
+    </Container> 
+    </ClientOnly>
+    )}
+  catch (error) {
+  // パースに失敗した場合のエラーハンドリング
+  console.error('Failed to searchParams,:', error);
+}      
  
 }
 export default Home;
