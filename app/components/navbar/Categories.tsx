@@ -3,7 +3,7 @@
 import Container from "../Container";
 import { IoDiamond } from 'react-icons/io5';
 import { BsSnow } from 'react-icons/bs';
-import { FaSkiing, FaBed, FaWalking, FaXRay, FaFileMedicalAlt, FaClinicMedical, FaHandHoldingMedical} from 'react-icons/fa';
+import { FaSkiing, FaBed, FaWalking, FaXRay, FaFileMedicalAlt, FaClinicMedical, FaBriefcaseMedical, FaHandHoldingMedical} from 'react-icons/fa';
 import { FcElectricalSensor } from 'react-icons/fc';
 import { BiInjection } from 'react-icons/bi';
 import { TbBeach, TbMountain, TbPool, TbPacman, TbWheelchair} from 'react-icons/tb';
@@ -15,12 +15,12 @@ import { usePathname, useSearchParams } from "next/navigation";
 
 export const categories = [
     {
-        label: '在宅医療',
+        label: '在宅',
         icon: FaClinicMedical,
         description: "This property has camping activities!"
     },
     {
-        label: '歩行介助',
+        label: '歩行',
         icon: FaWalking,
         description: "This property is on an Island!"
     }, 
@@ -35,22 +35,27 @@ export const categories = [
         description: "This property has windmills!"
     },
     {
-        label: '食事・栄養',
+        label: '栄養',
         icon: TbPacman,
         description: "This property is modern!"
     },
     {
-        label: '服薬',
+        label: '薬',
         icon: GiMedicines,
         description: "This property is the countryside!"
     },
     {
-        label: '注射・点滴',
+        label: '注射',
         icon: BiInjection,
         description: "This property has a pool!"
     },
     {
-        label: 'レントゲン',
+        label: '処置',
+        icon: FaBriefcaseMedical,
+        description: "This property has camping activities!"
+    },
+    {
+        label: '検査',
         icon: FaXRay,
         description: "This property has skiing activities!"
     },
@@ -65,7 +70,7 @@ export const categories = [
         description: "This property is an a castle!"
     },
     {
-        label: 'エクササイズ',
+        label: '筋トレ',
         icon: GiMuscleUp,
         description: "This property has camping activities!"
     },
@@ -75,6 +80,7 @@ export const categories = [
         description: 'This property is in a spooky cave!'
       }
     ]
+
 
 
 const Categories = () =>{
