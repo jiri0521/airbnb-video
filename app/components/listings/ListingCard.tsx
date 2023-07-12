@@ -130,7 +130,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           {reservationDate || data.category}
         </div>
         <div className="font-light text-neutral-500">
-          投稿日:{data.createdAt}
+          投稿日:{formattedDate}
         </div>
         <div className="flex flex-row items-center gap-1">
           <div className="font-semibold">
