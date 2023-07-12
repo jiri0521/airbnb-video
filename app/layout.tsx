@@ -13,8 +13,8 @@ import SearchModal from './components/modals/SearchModal';
 
 
 export const metadata = {
-  title: 'Airbnb',
-  description: 'Airbnb clone',
+  title: 'AirVideo',
+  description: 'Zaitaku-video',
 }
 
 const font = Nunito({
