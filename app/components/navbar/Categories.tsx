@@ -3,9 +3,11 @@
 import Container from "../Container";
 import { IoDiamond } from 'react-icons/io5';
 import { BsSnow } from 'react-icons/bs';
-import { FaSkiing } from 'react-icons/fa';
-import { TbBeach, TbMountain, TbPool } from 'react-icons/tb';
-import { GiBarn, GiBoatFishing,GiCactus,GiCastle,GiCaveEntrance,GiForestCamp,GiIsland, GiWindmill } from 'react-icons/gi';
+import { FaSkiing, FaBed, FaWalking, FaXRay, FaFileMedicalAlt, FaClinicMedical, FaHandHoldingMedical} from 'react-icons/fa';
+import { FcElectricalSensor } from 'react-icons/fc';
+import { BiInjection } from 'react-icons/bi';
+import { TbBeach, TbMountain, TbPool, TbPacman, TbWheelchair} from 'react-icons/tb';
+import { GiBarn, GiBoatFishing,GiCactus,GiCastle,GiCaveEntrance,GiForestCamp,GiIsland, GiMedicines, GiElectric, GiWindmill, GiDrippingTube, GiMuscleUp } from 'react-icons/gi';
 import { MdOutlineVilla } from 'react-icons/md';
 import CategoryBox from "../CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -13,79 +15,64 @@ import { usePathname, useSearchParams } from "next/navigation";
 
 export const categories = [
     {
-        label: 'Beach',
-        icon: TbBeach,
+        label: '在宅医療',
+        icon: FaClinicMedical,
+        description: "This property has camping activities!"
+    },
+    {
+        label: '歩行介助',
+        icon: FaWalking,
+        description: "This property is on an Island!"
+    }, 
+    {
+        label: '車椅子',
+        icon: TbWheelchair,
         description: "This property is close to beach!"
     },
     {
-        label: 'Windmills',
-        icon: GiWindmill,
+        label: 'ベッド',
+        icon: FaBed,
         description: "This property has windmills!"
     },
     {
-        label: 'Modern',
-        icon: MdOutlineVilla,
+        label: '食事・栄養',
+        icon: TbPacman,
         description: "This property is modern!"
     },
     {
-        label: 'Countryside',
-        icon: TbMountain,
+        label: '服薬',
+        icon: GiMedicines,
         description: "This property is the countryside!"
     },
     {
-        label: 'Pools',
-        icon: TbPool,
+        label: '注射・点滴',
+        icon: BiInjection,
         description: "This property has a pool!"
     },
     {
-        label: 'Islands',
-        icon: GiIsland,
-        description: "This property is on an Island!"
-    },
-    {
-        label: 'Lake',
-        icon: GiBoatFishing,
+        label: 'レントゲン',
+        icon: FaXRay,
         description: "This property has skiing activities!"
     },
     {
-        label: 'Skiing',
-        icon: FaSkiing,
+        label: '採血',
+        icon: GiDrippingTube,
         description: "This property is close to Lake!"
     },
     {
-        label: 'Castles',
-        icon: GiCastle,
+        label: '心電図',
+        icon: FaFileMedicalAlt,
         description: "This property is an a castle!"
     },
     {
-        label: 'Camping',
-        icon: GiForestCamp,
+        label: 'エクササイズ',
+        icon: GiMuscleUp,
         description: "This property has camping activities!"
     },
     {
-        label: 'Arctic',
-        icon: BsSnow,
-        description: "This property has camping activities!"
-    },
-    {
-        label: 'Caves',
-        icon: GiCaveEntrance,
+        label: 'その他',
+        icon: FaHandHoldingMedical,
         description: 'This property is in a spooky cave!'
-      },
-      {
-        label: 'Desert',
-        icon: GiCactus,
-        description: 'This property is in the desert!'
-      },
-      {
-        label: 'Barns',
-        icon: GiBarn,
-        description: 'This property is in a barn!'
-      },
-      {
-        label: 'Lux',
-        icon: IoDiamond,
-        description: 'This property is brand new and luxurious!'
       }
     ]
 
