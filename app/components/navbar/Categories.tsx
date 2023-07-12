@@ -3,7 +3,7 @@
 import Container from "../Container";
 import { IoDiamond } from 'react-icons/io5';
 import { BsSnow } from 'react-icons/bs';
-import { FaSkiing, FaBed, FaWalking, FaXRay, FaFileMedicalAlt, FaClinicMedical, FaBriefcaseMedical, FaHandHoldingMedical} from 'react-icons/fa';
+import { FaSkiing, FaBed, FaWalking, FaXRay, FaFileMedicalAlt, FaClinicMedical, FaBriefcaseMedical, FaHandHoldingMedical, FaHeadSideMask} from 'react-icons/fa';
 import { FcElectricalSensor } from 'react-icons/fc';
 import { BiInjection } from 'react-icons/bi';
 import { TbBeach, TbMountain, TbPool, TbPacman, TbWheelchair} from 'react-icons/tb';
@@ -65,8 +65,8 @@ export const categories = [
         description: "This property is close to Lake!"
     },
     {
-        label: '心電図',
-        icon: FaFileMedicalAlt,
+        label: '呼吸器',
+        icon: FaHeadSideMask,
         description: "This property is an a castle!"
     },
     {
