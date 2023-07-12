@@ -73,20 +73,13 @@ const ListingCard: React.FC<ListingCardProps> = ({
     return `${formattedStart} ~ ${formattedEnd}`;
   }, [reservation]);
   
-try {
-  const createdAt = data.createdAt;
-  const parsedDate = parseISO(createdAt);
+ const createdAtDate = new Date(data.createdAt);
+  const formattedDate = new Intl.DateTimeFormat('ja-JP', {
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+  }).format(createdAtDate);
 
-  if (isValid(parsedDate)) {
-  const formattedDate = format(parsedDate, "yyyy年M月d日", { locale: ja });
-  }
-  else {
-    throw new Error('Invalid date');
-  }
-} catch (error) {
-  // パースに失敗した場合のエラーハンドリング
-  console.error('Failed to parse date:', error);
-}
   
   return (
     <div 
