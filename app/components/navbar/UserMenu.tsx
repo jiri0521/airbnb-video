@@ -56,7 +56,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 cursor-pointer
                 "
                 >
-                    <u>コンテンツの新規作成</u>
+                    <u>新規作成</u>
             </div>
             <div 
                 onClick={toggleOpen}
