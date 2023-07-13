@@ -17,67 +17,67 @@ export const categories = [
     {
         label: '在宅',
         icon: FaClinicMedical,
-        description: "This property has camping activities!"
+        description: "在宅医療の概要や基本的な知識"
     },
     {
         label: '歩行',
         icon: FaWalking,
-        description: "This property is on an Island!"
+        description: "歩行の介助や気をつけるポイント"
     }, 
     {
         label: '車椅子',
         icon: TbWheelchair,
-        description: "This property is close to beach!"
+        description: "車椅子の介助や移乗の方法"
     },
     {
         label: 'ベッド',
         icon: FaBed,
-        description: "This property has windmills!"
+        description: "ベッド上でのケアのポイント"
     },
     {
         label: '栄養',
         icon: TbPacman,
-        description: "This property is modern!"
+        description: "療養に必要な栄養管理について"
     },
     {
         label: '薬',
         icon: GiMedicines,
-        description: "This property is the countryside!"
+        description: "薬の知識や服薬方法について"
     },
     {
         label: '注射',
         icon: BiInjection,
-        description: "This property has a pool!"
+        description: "注射や点滴について"
     },
     {
         label: '処置',
         icon: FaBriefcaseMedical,
-        description: "This property has camping activities!"
+        description: "処置について"
     },
     {
         label: '検査',
         icon: FaXRay,
-        description: "This property has skiing activities!"
+        description: "レントゲンやCTなどの検査について"
     },
     {
         label: '採血',
         icon: GiDrippingTube,
-        description: "This property is close to Lake!"
+        description: "採血データの基本的な項目について"
     },
     {
         label: '呼吸器',
         icon: FaHeadSideMask,
-        description: "This property is an a castle!"
+        description: "NPPVや人工呼吸器の基本的知識や使用方法について"
     },
     {
         label: '筋トレ',
         icon: GiMuscleUp,
-        description: "This property has camping activities!"
+        description: "筋力アップやエクササイズについて"
     },
     {
         label: 'その他',
         icon: FaHandHoldingMedical,
-        description: 'This property is in a spooky cave!'
+        description: '在宅医療に関わるその他の項目'
       }
     ]
 
