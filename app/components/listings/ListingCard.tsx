@@ -132,14 +132,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
         <div className="font-light text-neutral-500">
           投稿日:{formattedDate}
         </div>
-        <div className="flex flex-row items-center gap-1">
-          <div className="font-semibold">
-            ¥ {price}
-          </div>
-          {!reservation && (
-            <div className="font-light">1泊</div>
-          )}
-        </div>
+      
         {onAction && actionLabel && (
           <Button
             disabled={disabled}
