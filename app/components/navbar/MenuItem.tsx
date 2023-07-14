@@ -14,6 +14,7 @@ return(
 <div 
 onClick={onClick}
 className="
+    user-menu-container
     px-4
     py-3
     hover:bg-neutral-100
