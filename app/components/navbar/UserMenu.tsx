@@ -38,6 +38,40 @@ const UserMenu: React.FC<UserMenuProps> = ({
         rentModal.onOpen();
     },[currentUser,loginModal,rentModal])
 
+    const closeMenu = () => {
+        setIsOpen(false);
+      };
+
+    const handleClick = () => {
+        router.push('/');
+        closeMenu();
+      };
+    
+    const handleClick2 = () => {
+        router.push('/trips');
+        closeMenu();
+      };
+
+      const handleClick3 = () => {
+        router.push('/favorites');
+        closeMenu();
+      };
+
+      const handleClick4 = () => {
+        router.push('/reservations');
+        closeMenu();
+      };
+
+      const handleClick5 = () => {
+        router.push('/properties');
+        closeMenu();
+      };
+
+      const handleClick6 = () => {
+        router.push('/favorites');
+        closeMenu();
+      }
+
     return( 
     <div className="relative">
         <div className="flex flex-row items-center gap-3">
@@ -95,30 +129,29 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 top-12
                 text-sm               
             ">
-                <div className="flex flex-col cursor-pointer">
+                <div className="flex items-center flex-col gap-2 cursor-pointer">
                     { currentUser ? (
                     <>
 
                         <MenuItem 
-                            onClick={() => router.push("/")}
+                            onClick={handleClick}
                             label="ホーム"
                         />
                         <MenuItem 
-                            onClick={() => router.push("/trips")}
+                            onClick={handleClick2}
                             label="旅行の予定"
                         />
                         <MenuItem 
-                            onClick={()=> router.push("/favorites")}
+                            onClick={handleClick3}
                             label="お気に入り"
                         />
                         <MenuItem 
-                            onClick={()=> router.push("/reservations")}
+                            onClick={handleClick4}
                             label="自施設の予約"
                         />
                         <MenuItem 
-                            onClick={()=> router.push("/properties")}
+                            onClick={handleClick5}
                             label="掲載一覧"
-                        />
                         <MenuItem 
                             onClick={rentModal.onOpen}
                             label="新規作成"
