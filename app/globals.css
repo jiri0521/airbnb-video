@@ -30,3 +30,13 @@ video {
 p {
   margin: 0 0 5px;
 }
+
+.user-menu-container {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.user-menu-container span {
+  writing-mode: horizontal-tb;
+}
