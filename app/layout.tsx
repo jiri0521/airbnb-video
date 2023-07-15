@@ -13,7 +13,7 @@ import SearchModal from './components/modals/SearchModal';
 
 
 export const metadata = {
-  title: 'AirVideo',
+  title: '在宅ケア動画',
   description: 'Zaitaku-video',
 }
 
