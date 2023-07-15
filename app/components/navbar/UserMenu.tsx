@@ -38,7 +38,8 @@ const UserMenu: React.FC<UserMenuProps> = ({
         rentModal.onOpen();
     },[currentUser,loginModal,rentModal])
 
-   const closeMenu = () => {
+  
+    const closeMenu = () => {
         setIsOpen(false);
       };
 
@@ -137,18 +138,13 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             onClick={handleClick}
                             label="ホーム"
                         />
-                        <MenuItem 
-                            onClick={handleClick2}
-                            label="旅行の予定"
-                        />
+                       
+                       
                         <MenuItem 
                             onClick={handleClick3}
                             label="お気に入り"
                         />
-                        <MenuItem 
-                            onClick={handleClick4}
-                            label="自施設の予約"
-                        />
+                       
                         <MenuItem 
                             onClick={handleClick5}
                             label="掲載一覧"
