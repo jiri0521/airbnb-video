@@ -97,7 +97,6 @@ const Categories = () =>{
        <Container>
             <div className="font-semibold">見たい動画のジャンルを選んでください</div>
             <div className="
-                pt-4
                 flex
                 flex-row
                 items-center
