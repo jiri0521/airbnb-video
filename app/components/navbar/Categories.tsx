@@ -95,7 +95,7 @@ const Categories = () =>{
 
     return(
        <Container>
-            <div className="pt-4 font-semibold">見たい動画のジャンルを選んでください</div>
+            <div className="font-semibold">見たい動画のジャンルを選んでください</div>
             <div className="
                 pt-4
                 flex
