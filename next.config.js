@@ -5,6 +5,7 @@ const withPWA = require('next-pwa')({
 })
 
 module.exports = withPWA({
+    buildExcludes: [/middleware-manifest.json/],
     reactStrictMode: true
 });
 
