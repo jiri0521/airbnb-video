@@ -127,7 +127,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
           {location?.region}, {location?.label}
         </div>
         <div className="font-light text-neutral-500">
-          {reservationDate || data.category}
+          ジャンル:{reservationDate || data.category}
         </div>
         <div className="font-light text-neutral-500">
           投稿日:{formattedDate}
