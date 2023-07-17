@@ -1,17 +1,11 @@
 /** @type {import('next').NextConfig} */
 
-const withPWA = require('next-pwa');
+const withPWA = require('next-pwa')({
+  dest: 'public'
+})
 
 module.exports = withPWA({
-  pwa: {
-    name: "zaitaku video",
-    shortName:"zaitaku",
-    register: true,
-    dest: 'public',
-    skipWating: true,
-    scope: '/',
-    sw: 'service-worker.js',
-  },
+    reactStrictMode: true
 });
 
 const nextConfig = {
