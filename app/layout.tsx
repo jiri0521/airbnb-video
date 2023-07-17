@@ -15,6 +15,7 @@ import SearchModal from './components/modals/SearchModal';
 export const metadata = {
   title: '在宅ケア動画',
   description: 'Zaitaku-video',
+  manifest:'/manifest.json'
 }
 
 const font = Nunito({
