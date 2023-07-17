@@ -9,7 +9,6 @@ module.exports = withPWA({
     register: true,
     dest: 'public',
     skipWating: true,
-    disable: process.env.NODE_ENV === 'development',
     scope: '/',
     sw: 'service-worker.js',
   },
