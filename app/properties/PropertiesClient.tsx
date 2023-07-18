@@ -42,8 +42,8 @@ const PropertiesClient: React.FC<PropertiesClientProps> = ({
   return (
     <Container>
       <Heading
-        title="持ち家"
-        subtitle="貸出し可能な持ち家リスト"
+        title="My Video"
+        subtitle="公開動画リスト"
       />
       <div 
         className="
