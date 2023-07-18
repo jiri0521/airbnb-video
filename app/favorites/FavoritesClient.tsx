@@ -16,7 +16,7 @@ const FavoritesClient: React.FC<FavoritesClientProps> = ({
     <Container>
       <Heading
         title="お気に入り"
-        subtitle="お気に入りの旅先一覧"
+        subtitle="お気に入りの動画一覧"
       />
       <div 
         className="
