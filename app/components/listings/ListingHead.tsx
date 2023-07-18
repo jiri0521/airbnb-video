@@ -75,9 +75,8 @@ const ListingHead: React.FC<ListingHeadProps> = ({
         
       </div>
       <div
-        className="fixed z-50 bottom-5 right-10 py-5 px-2
-                  border-2 bg-red-200 rounded-full cursor-pointer"
-
+        className="fixed z-50 bottom-5 right-10 py-5 px-2 bg-blue-400
+                  border-2 hover:bg-blue-500 hover:shadow-sm hover:translate-y-0.5 transform transition rounded-full cursor-pointer"
         onClick={handleClick}
         >
         ホーム
