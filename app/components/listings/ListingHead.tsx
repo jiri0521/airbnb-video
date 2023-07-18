@@ -29,7 +29,8 @@ const ListingHead: React.FC<ListingHeadProps> = ({
   currentUser
 }) => {
   const { getByValue } = useCountries();
-
+  const router = useRouter();
+  
   const location = getByValue(locationValue);
   
   const handleClick = () => {
