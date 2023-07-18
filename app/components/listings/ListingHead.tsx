@@ -68,6 +68,14 @@ const ListingHead: React.FC<ListingHeadProps> = ({
         </div>
         
       </div>
+      <div
+        className="fixed z-50 bottom-5 right-10 py-5 px-2
+                  border-2 bg-red-200 rounded-full cursor-pointer"
+
+        onClick={handleClick}
+        >
+        ホーム
+      </div>
     </>
       
    );
