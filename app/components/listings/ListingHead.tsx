@@ -6,6 +6,7 @@ import ReactPlayer from 'react-player';
 
 import useCountries from "@/app/hooks/useCountries";
 import { SafeUser } from "@/app/types";
+import { useRouter } from 'next/navigation';
 
 import Heading from "../Heading";
 import HeartButton from "../HeartButton";
@@ -30,7 +31,11 @@ const ListingHead: React.FC<ListingHeadProps> = ({
   const { getByValue } = useCountries();
 
   const location = getByValue(locationValue);
-
+  
+  const handleClick = () => {
+    router.push('/');
+  };
+  
   return ( 
     
     <>    
