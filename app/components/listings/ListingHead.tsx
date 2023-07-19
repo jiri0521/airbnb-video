@@ -7,6 +7,7 @@ import ReactPlayer from 'react-player';
 import useCountries from "@/app/hooks/useCountries";
 import { SafeUser } from "@/app/types";
 import { useRouter } from 'next/navigation';
+import { HiOutlineHome } from 'react-icons/hi';
 
 import Heading from "../Heading";
 import HeartButton from "../HeartButton";
@@ -75,11 +76,10 @@ const ListingHead: React.FC<ListingHeadProps> = ({
         
       </div>
       <div
-        className="fixed z-50 bottom-5 right-10 py-5 px-2 bg-red-400
-                  border-2 hover:bg-red-500 hover:shadow-sm hover:translate-y-0.5 transform transition rounded-full cursor-pointer"
+        className="fixed z-50 bottom-5 right-10 py-5 px-2 bg-gray-100
+                  border-2 hover:bg-gray-200 hover:shadow-sm hover:translate-y-0.5 transform transition rounded-full cursor-pointer"
         onClick={handleClick}
-        >
-        ホーム
+        ><HiOutlineHome size={30} />
       </div>
     </>
       
