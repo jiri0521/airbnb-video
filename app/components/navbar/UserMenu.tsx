@@ -91,7 +91,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 cursor-pointer
                 "
                 >
-                    <u>新規作成</u>
+                    
             </div>
             <div 
                 onClick={toggleOpen}
@@ -149,10 +149,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             onClick={handleClick5}
                             label="掲載一覧"
                         />
-                        <MenuItem 
-                            onClick={rentModal.onOpen}
-                            label="新規作成"
-                        />
+                        
                         <hr/>
                         <MenuItem 
                             onClick={()=> signOut() }
