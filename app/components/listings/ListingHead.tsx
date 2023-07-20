@@ -80,6 +80,9 @@ const ListingHead: React.FC<ListingHeadProps> = ({
                   border-2 hover:bg-gray-200 hover:shadow-sm hover:translate-y-0.5 transform transition rounded-full cursor-pointer"
         onClick={handleClick}
         ><TbHomeShare size={30} />
+        <div className="font-midium text-sm ">
+                Back
+            </div>
       </div>
     </>
       
