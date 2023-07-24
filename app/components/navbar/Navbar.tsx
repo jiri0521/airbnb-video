@@ -38,7 +38,10 @@ const Navbar: React.FC<NavbarProps> = ({
                     >
                         <Logo />
                       
-                    <Search />
+                    <div className='flex border items-center gap-4 bg-white px-2 py-1 rounded-lg cursor-pointer'>
+                        <input className='text-[#222] outline-none' type="text" placeholder='Search...' />
+                        <AiOutlineSearch color="black" />
+                    </div>
                     <UserMenu currentUser={currentUser}/>
                     </div>
                 </Container>              
