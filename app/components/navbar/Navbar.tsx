@@ -1,5 +1,6 @@
 'use client';
 
+import { AiOutlineSearch } from "react-icons/ai";
 import Container from "../Container";
 import Categories from "./Categories";
 import Logo from "./Logo";
