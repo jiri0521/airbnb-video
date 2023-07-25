@@ -48,8 +48,8 @@ const UserMenu: React.FC<UserMenuProps> = ({
         closeMenu();
       };
     
-    const handleClick2 = () => {
-        router.push('/trips');
+   const handleClick2 = () => {
+        router.push('/contact');
         closeMenu();
       };
 
@@ -143,6 +143,11 @@ const UserMenu: React.FC<UserMenuProps> = ({
                         <MenuItem 
                             onClick={handleClick3}
                             label="お気に入り"
+                        />
+
+                         <MenuItem 
+                            onClick={handleClick2}
+                            label="お問い合わせ"
                         />
                        
                         
