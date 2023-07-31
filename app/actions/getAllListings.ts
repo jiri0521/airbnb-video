@@ -9,7 +9,7 @@ export default async function getAllListings(params: any) {
             let query: any = {};
     
             if(result) {
-                query.title = {
+                query.description = {
                     contains:result
                 }
             }
