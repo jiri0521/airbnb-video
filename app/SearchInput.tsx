@@ -40,7 +40,7 @@ const SearchInput = () => {
   <form className='flex justify-center' onSubmit={onSearch}>
    
     <input type='text'
-        className="px-4 py-5 min-w-[２５0px] lg:w-[620px] sm:px-5 sm:py-3 flex border rounded-tl-full rounded-bl-full focus:ring-[1px] placeholder:text-zinc-400"
+        className="px-4 py-2 min-w-[２５0px] lg:w-[620px] sm:px-5 sm:py-3 flex border rounded-tl-full rounded-bl-full focus:ring-[1px] placeholder:text-zinc-400"
         placeholder='検索...'
         onChange={(e) => setSearchQuery(e.target.value)}
     />
