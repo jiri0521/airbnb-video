@@ -6,6 +6,7 @@ import Categories from "./Categories";
 import Logo from "./Logo";
 import Search from "./Search";
 import UserMenu from "./UserMenu";
+import SearchInput from "@/app/SearchInput";
 
 import { SafeUser } from "@/app/types";
 
@@ -39,10 +40,8 @@ const Navbar: React.FC<NavbarProps> = ({
                     >
                         <Logo />
                       
-                    <div className='flex border items-center gap-4 bg-white px-2 py-1 rounded-lg cursor-pointer'>
-                        <input className='text-[#222] outline-none' type="text" placeholder='Search...' />
-                        <AiOutlineSearch color="black" />
-                    </div>
+                    <SearchInput />
+                        
                     <UserMenu currentUser={currentUser}/>
                     </div>
                 </Container>              
