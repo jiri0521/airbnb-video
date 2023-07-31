@@ -5,6 +5,7 @@ import Container from "../components/Container"
 import ListingCard from "@/app/components/listings/ListingSearchCard"
 import EmptyState from "../components/EmptyState"
 
+export const dynamic = "force-dynamic"
 interface HomeProps{
   searchParams: string
 }
