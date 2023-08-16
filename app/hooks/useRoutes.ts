@@ -27,6 +27,7 @@ const useRoutes = () => {
       label: 'Home', 
       href: '/',
       icon: TbHomeShare, 
+       active: pathname === '/'
     }
   ], [pathname, conversationId]);
   
