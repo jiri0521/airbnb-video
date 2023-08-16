@@ -20,7 +20,7 @@ export default async function ConversationsLayout({
        
         <ConversationList 
           users={users} 
-          title="Messages" 
+          title="トーク" 
           initialItems={conversations}
         />
         
