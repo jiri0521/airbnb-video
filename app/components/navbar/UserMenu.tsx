@@ -59,7 +59,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
       };
 
       const handleClick4 = () => {
-        router.push('/reservations');
+        router.push('/users');
         closeMenu();
       };
 
@@ -144,6 +144,12 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             onClick={handleClick3}
                             label="お気に入り"
                         />
+
+                         <MenuItem 
+                            onClick={handleClick4}
+                            label="チャット"
+                        />
+
 
                          <MenuItem 
                             onClick={handleClick2}
