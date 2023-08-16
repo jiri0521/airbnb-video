@@ -10,6 +10,8 @@ import useRentModal from './hooks/useRentModal';
 import ToasterProvider from './providers/ToasterProvider';
 import getCurrentUser from './actions/getCurrentUser';
 import SearchModal from './components/modals/SearchModal';
+import AuthContext from './context/AuthContext';
+
 
 
 export const metadata = {
@@ -29,13 +31,14 @@ export default async function RootLayout({
 }) {
   const currentUser = await getCurrentUser();
 
-  return (
-    <html lang="en">
-
+ return (
+    <html lang="ja">
+     
       <body className={font.className}>
         <ClientOnly>
           <ToasterProvider />
           <SearchModal />
+         
           <LoginModal />
           <RegisterModal />
           <RentModal />
@@ -43,9 +46,12 @@ export default async function RootLayout({
           <Navbar currentUser={currentUser} />
         </ClientOnly>
         <div className='pb-20 pt-28'>
+          <AuthContext>
         {children}
+        </AuthContext>
         </div>
       </body>
     </html>
   )
 }
+
