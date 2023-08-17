@@ -33,9 +33,9 @@ const useRoutes = () => {
     },
     {
       label: 'Profile', 
-      href: '/profiles',
+      href: '/#',
       icon: ImProfile, 
-      active: pathname === '/profiles'
+      active: pathname === '/#'
     }
   ], [pathname, conversationId]);
   
