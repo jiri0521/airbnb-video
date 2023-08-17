@@ -20,7 +20,7 @@ interface ProfileProps {
     currentUser: User;
   }
 
-  const Profile: React.FC<ProfileProps> = ({
+  const ProfilePage: React.FC<ProfileProps> = ({
    
   currentUser = {}
   }) => {
@@ -160,4 +160,4 @@ interface ProfileProps {
   )
 }
 
-export default Profile;
+export default ProfilePage;
