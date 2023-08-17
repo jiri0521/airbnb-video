@@ -160,4 +160,4 @@ interface ProfileProps {
   )
 }
 
-export default Profile
+export default Profile;
