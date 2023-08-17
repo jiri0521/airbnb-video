@@ -1,10 +1,12 @@
 import { useMemo } from "react";
 import { usePathname } from "next/navigation";
 import { HiChat } from 'react-icons/hi';
+import { ImProfile } from 'react-icons/im';
 import { HiArrowLeftOnRectangle, HiUsers } from 'react-icons/hi2';
 import { signOut } from "next-auth/react";
 import useConversation from "./useConversation";
 import { TbHomeShare } from "react-icons/tb";
+import { BiMoviePlay } from "react-icons/bi";
 
 const useRoutes = () => {
   const pathname = usePathname();
@@ -26,8 +28,14 @@ const useRoutes = () => {
     {
       label: 'Home', 
       href: '/',
-      icon: TbHomeShare, 
-       active: pathname === '/'
+      icon: BiMoviePlay, 
+      active: pathname === '/'
+    },
+    {
+      label: 'Profile', 
+      href: '/',
+      icon: ImProfile, 
+      active: pathname === '/'
     }
   ], [pathname, conversationId]);
   
