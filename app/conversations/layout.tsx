@@ -3,7 +3,7 @@ import getUsers from "../actions/getUsers";
 import Sidebar from "../components/sidebar/Sidebar";
 import ConversationList from "./components/ConversationList";
 import AuthContext from '../context/AuthContext'
-import ConversationList from "./components/ConversationList";
+import ActiveStatus from "../components/ActiveStatus";
 
 export default async function ConversationsLayout({
   children
