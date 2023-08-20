@@ -18,7 +18,6 @@ import SettingsModal from '../components/sidebar/SettingsModal';
 
 
 interface ProfileProps {
-    isOpen?: boolean;
     currentUser?: User
   }
 
