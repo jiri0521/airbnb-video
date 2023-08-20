@@ -7,6 +7,8 @@ import { signOut } from "next-auth/react";
 import useConversation from "./useConversation";
 import { TbHomeShare } from "react-icons/tb";
 import { BiMoviePlay } from "react-icons/bi";
+import { AiOutlineStar } from "react-icons/ai";
+
 
 const useRoutes = () => {
   const pathname = usePathname();
@@ -24,6 +26,12 @@ const useRoutes = () => {
       href: '/users', 
       icon: HiUsers, 
       active: pathname === '/users'
+    },
+     {
+      label: 'favorites', 
+      href: '/favorites',
+      icon: AiOutlineStar, 
+      active: pathname === '/favorites'
     },
     {
       label: 'Home', 
