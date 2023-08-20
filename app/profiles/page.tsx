@@ -8,25 +8,23 @@ import { User } from '@prisma/client'
 import { CldUploadButton } from 'next-cloudinary';
 
 import Input from "../components/inputs/Input";
-import Modal from '@/app/components/modals/ChatModal';
 import Button from '../components/ChatButton';
 import Image from 'next/image';
 import { toast } from 'react-hot-toast';
-import Avatar from '../components/ChatAvatar';
-import { SafeUser } from '../types';
-import SettingsModal from '../components/sidebar/SettingsModal';
 
 
 interface ProfileProps {
-    currentUser?: User
+    currentUser: User
   }
 
   const ProfilePage: React.FC<ProfileProps> = ({
-   
-  currentUser = {}
+  currentUser
   }) => {
     const router = useRouter();
     const [isLoading, setIsLoading] = useState(false);
+
+    console.log(currentUser, '&CHANGE_USER_PROFILE')
+
     const {
         register,
         handleSubmit,
@@ -37,8 +35,7 @@ interface ProfileProps {
         }
       } = useForm<FieldValues>({
           defaultValues: {
-            name: currentUser?.name,
-            image: currentUser?.image
+            name: ""    
           }
       });
     
