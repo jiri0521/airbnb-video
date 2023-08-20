@@ -11,7 +11,7 @@ import ToasterProvider from './providers/ToasterProvider';
 import getCurrentUser from './actions/getCurrentUser';
 import SearchModal from './components/modals/SearchModal';
 import AuthContext from './context/AuthContext';
-
+import MobileFooter from './components/sidebar/MobileFooter';
 
 
 export const metadata = {
@@ -48,6 +48,7 @@ export default async function RootLayout({
         <div className='pb-20 pt-28'>
           <AuthContext>
         {children}
+          <MobileFooter />
         </AuthContext>
         </div>
       </body>
