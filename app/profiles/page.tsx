@@ -19,7 +19,6 @@ import SettingsModal from '../components/sidebar/SettingsModal';
 
 interface ProfileProps {
     isOpen?: boolean;
-    onClose: () => void;
     currentUser?: User
   }
 
