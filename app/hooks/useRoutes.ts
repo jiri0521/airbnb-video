@@ -15,30 +15,18 @@ const useRoutes = () => {
   const { conversationId } = useConversation();
 
   const routes = useMemo(() => [    
-    { 
-      label: 'Users', 
-      href: '/users', 
-      icon: HiUsers, 
-      active: pathname === '/users'
-    },
-    { 
-      label: 'Chat', 
-      href: '/conversations', 
-      icon: HiChat,
-      active: pathname === '/conversations' || !!conversationId
-    },
-     {
-      label: 'favorites', 
-      href: '/favorites',
-      icon: AiOutlineStar, 
-      active: pathname === '/favorites'
-    },
     {
       label: 'Home', 
       href: '/',
       icon: BiMoviePlay, 
       active: pathname === '/'
     },
+     {
+      label: 'favorites', 
+      href: '/favorites',
+      icon: AiOutlineStar, 
+      active: pathname === '/favorites'
+     },
     {
       label: 'Profile', 
       href: '/#',
