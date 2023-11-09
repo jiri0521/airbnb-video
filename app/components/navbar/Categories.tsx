@@ -5,7 +5,7 @@ import { IoDiamond } from 'react-icons/io5';
 import { BsSnow } from 'react-icons/bs';
 import { FaSkiing, FaBed, FaWalking, FaXRay, FaFileMedicalAlt, FaClinicMedical, FaBriefcaseMedical, FaHandHoldingMedical, FaHeadSideMask} from 'react-icons/fa';
 import { FcElectricalSensor } from 'react-icons/fc';
-import { BiInjection } from 'react-icons/bi';
+import { BiHomeAlt, BiInjection } from 'react-icons/bi';
 import { TbBeach, TbMountain, TbPool, TbPacman, TbWheelchair} from 'react-icons/tb';
 import { GiBarn, GiBoatFishing,GiCactus,GiCastle,GiCaveEntrance,GiForestCamp,GiIsland, GiMedicines, GiElectric, GiWindmill, GiDrippingTube, GiMuscleUp } from 'react-icons/gi';
 import { MdOutlineVilla } from 'react-icons/md';
@@ -15,9 +15,9 @@ import { usePathname, useSearchParams } from "next/navigation";
 
 export const categories = [
     {
-        label: '在宅',
-        icon: FaClinicMedical,
-        description: "在宅医療の概要や基本的な知識"
+        label: '',
+        icon: BiHomeAlt,
+        description: "ホーム"
     },
     {
         label: '歩行',
