@@ -7,7 +7,7 @@ import ClientOnly from "@/app/components/ClientOnly";
 const ContactPage =  () => {
   
     return (
-       <ClientOnly>
+       
         <div>
           <h1 className="text-center  text-orange-400 h-full mb-3">お問い合わせ</h1>
            <form>
@@ -27,7 +27,7 @@ const ContactPage =  () => {
        
        </div>
          
-      </ClientOnly
+      
     );
   }
    
