@@ -7,7 +7,7 @@ import { signOut } from "next-auth/react";
 import useConversation from "./useConversation";
 import { TbHomeShare } from "react-icons/tb";
 import { BiMoviePlay } from "react-icons/bi";
-import { AiOutlineStar } from "react-icons/ai";
+import { AiOutlineMail,AiOutlineStar } from "react-icons/ai";
 
 
 const useRoutes = () => {
@@ -27,11 +27,11 @@ const useRoutes = () => {
       icon: AiOutlineStar, 
       active: pathname === '/favorites'
      },
-    {
-      label: 'Profile', 
-      href: '/#',
-      icon: ImProfile, 
-      active: pathname === '/#'
+  {
+      label: 'Contact', 
+      href: '/contact',
+      icon: AiOutlineMail, 
+      active: pathname === '/contact'
     }
   ], [pathname, conversationId]);
   
