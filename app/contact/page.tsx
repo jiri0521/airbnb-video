@@ -22,7 +22,14 @@ const ContactPage =  () => {
                   id="message"
                   className="mx-auto form-control px-4 py-2 min-w-[230px] lg:w-[620px] sm:px-5 sm:py-3 flex border focus:ring-[1px] placeholder:text-zinc-400"
                 ></textarea>
+               
               </div>
+              <button
+              type="submit"
+              className="flex border focus:ring-[1px] px-4 py-2 bg-blue-400 text-white mx-auto rounded"
+              >
+                メール送信
+              </button>
            </form>
        
        </div>
