@@ -145,11 +145,6 @@ const UserMenu: React.FC<UserMenuProps> = ({
                             label="お気に入り"
                         />
 
-                         <MenuItem 
-                            onClick={handleClick4}
-                            label="チャット"
-                        />
-
 
                          <MenuItem 
                             onClick={handleClick2}
