@@ -4,7 +4,7 @@ self.addEventListener('install', (event) => {
         return cache.addAll([
           '/',
           '/globals.css',
-          'images/さんりつ会ロゴ透明.png'
+          'images/icon-512.png'
         ]);
       })
     );
