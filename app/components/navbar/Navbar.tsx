@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     "
                     >
                         <Logo />
-                      動画で在宅ケア
+                       <div className="hidden md:block">動画で在宅ケア</div>
                     <SearchInput />
                         
                     <UserMenu currentUser={currentUser}/>
