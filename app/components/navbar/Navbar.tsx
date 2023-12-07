@@ -39,7 +39,7 @@ const Navbar: React.FC<NavbarProps> = ({
                     "
                     >
                         <Logo />
-                      
+                      動画で在宅ケア
                     <SearchInput />
                         
                     <UserMenu currentUser={currentUser}/>
