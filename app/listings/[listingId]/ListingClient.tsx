@@ -16,6 +16,7 @@ import ListingInfo from "@/app/components/listings/ListingInfo";
 import useLoginModal from "@/app/hooks/useLoginModal";
 
 import ListingReservation from "@/app/components/listings/ListingReservation";
+import VideoList from "@/app/components/sidebar/VideoList";
 
 
 const initialDateRange = {
@@ -146,7 +147,23 @@ const ListingClient: React.FC<ListingClientProps> = ({
                             videoUrl={listing.videoUrl}
                             imageSrc={listing.imageSrc}
                         />
-
+                         <div
+                         className="
+                         flex
+                         flex-col
+                         gap-6
+                         
+                         md:order-last 
+                         md:col-span-3
+                       "
+                          >
+                        <div className="text-center font-semibold text-lg">関連動画</div>
+                          <div className="                           
+                            grid
+                            grid-cols-1          
+                          ">
+                          <VideoList/>
+                        </div>
                       
                     </div>
                 </div>
