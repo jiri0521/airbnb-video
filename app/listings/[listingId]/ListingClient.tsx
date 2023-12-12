@@ -15,31 +15,43 @@ import ListingHead from "@/app/components/listings/ListingHead";
 import ListingInfo from "@/app/components/listings/ListingInfo";
 import useLoginModal from "@/app/hooks/useLoginModal";
 
-import ListingReservation from "@/app/components/listings/ListingReservation";
-import VideoList from "@/app/components/sidebar/VideoList";
+import Button from '@/app/components/Button';
 
+import ListingReservation from "@/app/components/listings/ListingReservation";
+import ListingCard from "@/app/components/listings/ListingCard";
+import { data } from "autoprefixer";
+import Calendar from "@/app/components/inputs/Calentar";
+
+import ListingCards from "@/app/components/listings/ListingSearchCard"
+import Link from "next/link";
+import VideoList from "@/app/components/sidebar/VideoList";
 
 const initialDateRange = {
     startDate: new Date(),
     endDate: new Date(),
     key: 'selection'
 };
+export const dynamic = "force-dynamic"
 
 interface ListingClientProps{
     reservations?: SafeReservation[]
     listing: SafeListing & {
         user: SafeUser
     };
-    currentUser?: SafeUser | null;
+    currentUser?: SafeUser | null; 
+
 }
+
 
 const ListingClient: React.FC<ListingClientProps> = ({
     listing,
     reservations = [],
     currentUser
+
 }) => {
     const loginModal = useLoginModal();
     const router = useRouter();
+   
 
     const disabledDates = useMemo(() => {
        let dates: Date[]= [];
@@ -117,6 +129,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
         item.label === listing.category);
     },[listing.category]);
 
+    
     return(
         <Container>
             <div className="max-w-screen-lg mx-auto">
@@ -130,6 +143,7 @@ const ListingClient: React.FC<ListingClientProps> = ({
                         currentUser={currentUser}
                     />
                     <div className="
+                   
                         grid
                         grid-cols-1
                         md:grid-cols-7
@@ -147,7 +161,8 @@ const ListingClient: React.FC<ListingClientProps> = ({
                             videoUrl={listing.videoUrl}
                             imageSrc={listing.imageSrc}
                         />
-                         <div
+
+                        <div
                          className="
                          flex
                          flex-col
@@ -156,15 +171,15 @@ const ListingClient: React.FC<ListingClientProps> = ({
                          md:order-last 
                          md:col-span-3
                        "
-                          >
+                      >
                         <div className="text-center font-semibold text-lg">関連動画</div>
                           <div className="                           
                             grid
                             grid-cols-1          
                           ">
-                          <VideoList/>
+                      <VideoList/>
                         </div>
-                      
+                      </div>
                     </div>
                 </div>
 
