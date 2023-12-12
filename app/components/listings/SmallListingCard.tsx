@@ -83,7 +83,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
 
   
   return (
-    <div className="flex justify-end">
+    <div className="flex justify-center">
     <div 
       onClick={() => router.push(`/listings/${data.id}`)} 
       className="col-span-1 cursor-pointer group"
