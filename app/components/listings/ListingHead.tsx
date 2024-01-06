@@ -43,7 +43,7 @@ const ListingHead: React.FC<ListingHeadProps> = ({
     <>    
         <Heading 
             title={title}
-            subtitle={`${location?.label}`}
+            subtitle="在宅ケア"
         />
             <div className="
               w-full
