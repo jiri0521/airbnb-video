@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import ListingCard from '../listings/ListingCard';
 import SmallListingCard from '../listings/SmallListingCard';
 
 interface Listing {
@@ -9,6 +8,14 @@ interface Listing {
   videoUrl: string;
   imageSrc: string;
 }
+
+// リストをシャッフルする関数
+const shuffleArray = (array: any[]) => {
+  return array
+    .map((value) => ({ value, sort: Math.random() }))
+    .sort((a, b) => a.sort - b.sort)
+    .map(({ value }) => value);
+};
 
 const VideoList: React.FC = () => {
   const [listings, setListings] = useState<Listing[]>([]);
@@ -24,7 +31,8 @@ const VideoList: React.FC = () => {
           throw new Error('Network response was not ok');
         }
         const data = await response.json();
-        setListings(data);
+       // 取得したデータをシャッフルして状態にセットする
+       setListings(shuffleArray(data));
       } catch (error) {
         console.error("There was a problem with the fetch operation:");
         // ここにエラーハンドリングのロジックを書く
