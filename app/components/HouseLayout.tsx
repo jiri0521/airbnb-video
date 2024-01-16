@@ -12,7 +12,7 @@ const LayoutPlan = () => {
         {/* キッチンへのリンク */}
         <Link href="/?category=栄養">
           <div className="block text-4xl text-orange-500 font-bold hover:bg-blue-100 animate-wiggle" style={{ 
-            position: 'absolute', top: '60%', left: '25%', width: '15%', height: '20%' }}>食事</div>
+            position: 'absolute', top: '60%', left: '32%', width: '15%', height: '20%' }}>食事</div>
         </Link>
         {/* 居間へのリンク */}
         <Link href="/?category=ベッド">
