@@ -25,7 +25,8 @@ const LayoutPlan = () => {
             position: 'absolute', top: '55%', left: '58%', width: '10%', height: '15%' }}>居間</div>
         </Link>
       </div>
-      <a href="https://jp.freepik.com/free-vector/flat-architectural-plan-top-view-position_4015450.htm#query=%E9%96%93%E5%8F%96%E3%82%8A&position=43&from_view=keyword&track=sph&uuid=2a7df97a-0b8b-4987-a7d3-09c6f0cd81ba">イラストの著作者：macrovector</a>／出典：Freepik
+            <a className='text-gray-400' href="https://jp.freepik.com/free-vector/flat-architectural-plan-top-view-position_4015450.htm#query=%E9%96%93%E5%8F%96%E3%82%8A&position=43&from_view=keyword&track=sph&uuid=2a7df97a-0b8b-4987-a7d3-09c6f0cd81ba">イラストの著作者:macrovector<br></br>/出典:Freepik</a>
+
     </div>
   );
 };
