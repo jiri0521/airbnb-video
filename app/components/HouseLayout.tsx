@@ -2,7 +2,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import layout from 'public/images/layout.svg';
-import balloon from 'public/images/balloon.svg'; // インポート確認済み
+import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
+import balloonKitchen from 'public/images/balloon-kitchen.svg';
+import balloonLiving from 'public/images/balloon-living.svg';
 
 const LayoutPlan = () => {
   
