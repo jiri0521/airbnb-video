@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
     <div className="container mx-auto">
       <h1 className="text-center text-2xl font-bold my-4">間取りから動画選択</h1>
-      <div className="text-center text-gray-500 my-4">ゆらゆらしてる文字をクリック！</div>
+      <div className="text-center text-gray-500 my-4">ゆらゆらしてる風船🎈をクリック！</div>
       <LayoutPlan />
     </div>
   );
