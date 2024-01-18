@@ -1,6 +1,8 @@
 // pages/_app.js
 
 import { useEffect } from 'react';
+import Script from 'next/script'; // この行を追加
+
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
