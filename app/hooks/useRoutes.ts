@@ -28,7 +28,7 @@ const useRoutes = () => {
       active: pathname === '/favorites'
      },
      {
-      label: '間取り', 
+      label: '間取り図', 
       href: '/house',
       icon: BiLayout, 
       active: pathname === '/house'
