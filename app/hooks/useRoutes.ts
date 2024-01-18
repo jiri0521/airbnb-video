@@ -6,7 +6,7 @@ import { HiArrowLeftOnRectangle, HiUsers } from 'react-icons/hi2';
 import { signOut } from "next-auth/react";
 import useConversation from "./useConversation";
 import { TbHomeShare } from "react-icons/tb";
-import { BiMoviePlay, BiLayout } from "react-icons/bi";
+import { BiMoviePlay, BiLayout,BiHomeAlt } from "react-icons/bi";
 import { AiOutlineMail,AiOutlineStar } from "react-icons/ai";
 
 
@@ -18,7 +18,7 @@ const useRoutes = () => {
     {
       label: 'ホーム', 
       href: '/',
-      icon: BiMoviePlay, 
+      icon: BiHomeAlt, 
       active: pathname === '/'
     },
      {
