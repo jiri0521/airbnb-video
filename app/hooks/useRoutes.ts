@@ -16,25 +16,25 @@ const useRoutes = () => {
 
   const routes = useMemo(() => [    
     {
-      label: 'Home', 
+      label: 'ホーム', 
       href: '/',
       icon: BiMoviePlay, 
       active: pathname === '/'
     },
      {
-      label: 'favorites', 
+      label: 'お気に入り', 
       href: '/favorites',
       icon: AiOutlineStar, 
       active: pathname === '/favorites'
      },
      {
-      label: 'HouseLayout', 
+      label: '間取り', 
       href: '/house',
       icon: BiLayout, 
       active: pathname === '/house'
      },
   {
-      label: 'Contact', 
+      label: 'お問い合わせ', 
       href: '/contact',
       icon: AiOutlineMail, 
       active: pathname === '/contact'
