@@ -1,3 +1,5 @@
+importScripts('https://www.pushcode.jp/dist/js/pushcode_sw.js')
+
 self.addEventListener('install', (event) => {
     event.waitUntil(
       caches.open('cache-v1').then((cache) => {
