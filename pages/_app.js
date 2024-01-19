@@ -19,24 +19,5 @@ function MyApp({ Component, pageProps }) {
       });
     }
   }, []);
- 
- return (
-    <>
-                {/* Next.jsのScriptコンポーネントを使用して外部スクリプトを追加 */}
-                <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-          <script>
-            window.OneSignalDeferred = window.OneSignalDeferred || [];
-            OneSignalDeferred.push(function(OneSignal) {
-              OneSignal.init({
-                appId: "584d9f8f-3fb4-4843-ad96-5c400641f934",
-              })};
-            );
-          </script>
-      {/* この下にページの主要なコンポーネントが表示されます */}
-         <Component {...pageProps} />
-  
-  </>
-  );
-}
 
 export default MyApp;
