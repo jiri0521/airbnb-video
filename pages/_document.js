@@ -10,6 +10,10 @@ class MyDocument extends Document {
           <link rel="service-worker" href="/service-worker.js" />
           <link rel="apple-touch-icon" href="/icon-192x192.png"></link>
           <meta name="theme-color" content="#fff" />
+          <script
+            src="https://www.pushcode.jp/dist/js/pushcode_sw.js"
+            defer
+          ></script>
         </Head>
         <body>
           <Main />
