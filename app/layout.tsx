@@ -44,10 +44,10 @@ export default async function RootLayout({
           <RentModal />
         
           <Navbar currentUser={currentUser} />
-           <OneSignalInitial/>
         </ClientOnly>
         <div className='pb-20 pt-28'>
           <AuthContext>
+            <OneSignalInitial/>
         {children}
           <MobileFooter />
         </AuthContext>
