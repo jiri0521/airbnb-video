@@ -12,7 +12,7 @@ import getCurrentUser from './actions/getCurrentUser';
 import SearchModal from './components/modals/SearchModal';
 import AuthContext from './context/AuthContext';
 import MobileFooter from './components/sidebar/MobileFooter';
-
+import { OneSignalInitial } from './components/OneSignalInitial';
 
 export const metadata = {
   title: '在宅ケア動画',
@@ -44,6 +44,7 @@ export default async function RootLayout({
           <RentModal />
         
           <Navbar currentUser={currentUser} />
+           <OneSignalInitial/>
         </ClientOnly>
         <div className='pb-20 pt-28'>
           <AuthContext>
