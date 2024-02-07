@@ -8,7 +8,7 @@ const FloatingHomeButton = () => {
 
   return (
     <button
-      className="fixed top-20 left-20 bg-blue-500 hover:bg-blue-700 text-white p-2 rounded-full shadow-lg cursor-pointer transition-colors duration-200 z-50"
+      className="fixed top-20 left-5 bg-blue-500 hover:bg-blue-700 text-white p-2 rounded-full shadow-lg cursor-pointer transition-colors duration-200 z-50"
       
       onClick={() => router.push('/house')}
       aria-label="back"
