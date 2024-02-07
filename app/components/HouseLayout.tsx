@@ -15,14 +15,14 @@ const LayoutPlan = () => {
       <Image src={layout} alt="3LDK Layout" width={700} height={700} />
       <div className="absolute top-0 left-0 w-full h-full">
         {/* div要素に 'balloon' スタイルクラスとアニメーションを適用します */}
-         <Link href="/?category=栄養">
+         <Link href="/kithen">
         <Image src={balloonKitchen} className='w-full h-full animate-wiggle' alt="bollon-eiyou" style={{ position: 'absolute', top: '55%', left: '28%', width: '15%', height: '15%' }}/>
         </Link>
         {/* 寝室へのリンク */}
-        <Link href="/?category=ベッド">
+        <Link href="/bedroom">
         <Image src={balloonBed} className='w-full h-full animate-wiggle' alt="bollon-bed" style={{ position: 'absolute', top: '28%', left: '58%', width: '15%', height: '15%' }}/>
         </Link>
-        <Link href="/?category=歩行">
+        <Link href="/living">
         <Image src={balloonLiving} className='w-full h-full animate-wiggle' alt="bollon-living" style={{ position: 'absolute', top: '55%', left: '58%', width: '15%', height: '15%' }}/>
         </Link>
       </div>
