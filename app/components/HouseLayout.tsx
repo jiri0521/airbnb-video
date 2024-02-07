@@ -15,7 +15,7 @@ const LayoutPlan = () => {
       <Image src={layout} alt="3LDK Layout" width={700} height={700} />
       <div className="absolute top-0 left-0 w-full h-full">
         {/* div要素に 'balloon' スタイルクラスとアニメーションを適用します */}
-         <Link href="/kithen">
+         <Link href="/kitchen">
         <Image src={balloonKitchen} className='w-full h-full animate-wiggle' alt="bollon-eiyou" style={{ position: 'absolute', top: '55%', left: '28%', width: '15%', height: '15%' }}/>
         </Link>
         {/* 寝室へのリンク */}
