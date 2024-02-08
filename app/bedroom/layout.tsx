@@ -4,10 +4,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import layout from 'public/images/bedroom.webp';
-import BedWakeUpCat from 'public/images/ねこベッド起き上がり.png';
-import BedStandUpCat from 'public/images/ねこベッド立ち上がり.png';
-import BedSleepCat from 'public/images/ねこ寝返り.png';
-import BedChairCat from 'public/images/ねこ車椅子.png';
+import BedWakeUpCat from 'public/images/BedWakeUpCat.png';
+import BedStandUpCat from 'public/images/BedStandUpCat.png';
+import BedSleepCat from 'public/images/BedSleepCat.png';
+import BedChairCat from 'public/images/BedChairCat.png';
 import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
 import balloonKitchen from 'public/images/balloon-kitchen.svg';
 import balloonLiving from 'public/images/balloon-living.svg';
