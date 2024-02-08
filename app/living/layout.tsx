@@ -44,6 +44,7 @@ const LayoutPlan = () => {
       }
     `}</style>
     <div className="flex flex-col relative items-center">
+      【居間】ねこをタッチしてみよう👆
       <Image src={layout} alt="bedroom Layout" width={700} height={700} /> 
       
       <FloatingHomeButton /> 
