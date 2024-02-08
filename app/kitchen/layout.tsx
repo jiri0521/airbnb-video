@@ -33,6 +33,16 @@ const LayoutPlan = () => {
 
   return (
   <>
+     <style jsx global>{`
+      @keyframes slideInUp {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+    `}</style>
     <div className="flex flex-col relative items-center">
       【キッチン】猫をタッチしてみよう👆
       <Image src={layout} alt="bedroom Layout" width={700} height={700} /> 
@@ -61,7 +71,7 @@ const LayoutPlan = () => {
       © pixander 123RF Free Images
       </div>
       {isModalOpen && modalContent && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-end p-4 z-50 " onClick={closeModal}>
+        <div className="fixed inset-0 flex justify-center items-end p-4 z-50 " onClick={closeModal}>
           <div
               className="bg-white p-6 rounded-t-lg shadow-lg w-full max-w-md m-4 animate-slideInUp"
               onClick={(e) => e.stopPropagation()}
