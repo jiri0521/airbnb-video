@@ -5,8 +5,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import layout from 'public/images/living.webp';
-import DeepSitDownCat from 'public/images/ねこ深く座る.png';
-import StandUpCat from 'public/images/ねこ床からの立ち上がり.png';
+import DeepSitDownCat from 'public/images/DeepSitDownCat.png';
+import StandUpCat from 'public/images/StandUpFloorCat.png';
 import FloatingHomeButton from '../components/FloatingHomeButton';
 import React, { useState } from 'react';
 
