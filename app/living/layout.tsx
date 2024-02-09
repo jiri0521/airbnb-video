@@ -20,7 +20,7 @@ interface ModalContent {
 
 
 const LayoutPlan = () => {
-  
+  const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<ModalContent>({ title: '', description: '',videoUrl:''});
 
