@@ -3,13 +3,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import layout from 'public/images/kitchen3.webp';
-import ToromiCat from 'public/images/ToromiCat.png';
-import MealCat from 'public/images/MealCat.png';
+import ToromiCat from 'public/images/猫とろみ.png';
+import MealCat from 'public/images/ねこ食べさせ方.png';
 import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
 import balloonKitchen from 'public/images/balloon-kitchen.svg';
 import balloonLiving from 'public/images/balloon-living.svg';
 import FloatingHomeButton from '../components/FloatingHomeButton';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 interface ModalContent {
   title: string;
@@ -19,6 +20,7 @@ interface ModalContent {
 
 
 const LayoutPlan = () => {
+  const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<ModalContent>({ title: '', description: '',videoUrl:''});
 
@@ -31,9 +33,14 @@ const LayoutPlan = () => {
     setIsModalOpen(false);
   };
 
+  const watchVideo = (url: string) => {
+    closeModal(); // モーダルを閉じてから
+    router.push(url); // 指定したURLに遷移
+  };
+
   return (
   <>
-     <style jsx global>{`
+   <style jsx global>{`
       @keyframes slideInUp {
         from {
           transform: translateY(100%);
@@ -71,24 +78,21 @@ const LayoutPlan = () => {
       © pixander 123RF Free Images
       </div>
       {isModalOpen && modalContent && (
-        <div className="fixed inset-0 flex justify-center items-end p-4 z-50 " onClick={closeModal}>
-          <div
-              className="bg-white p-6 rounded-t-lg shadow-lg w-full max-w-md m-4 animate-slideInUp"
-              onClick={(e) => e.stopPropagation()}
-              style={{
-                animation: 'slideInUp 0.5s ease-out forwards'
-              }}
-            >
-            <h2 className="text-lg font-bold mb-2">{modalContent.title}</h2>
-            <p>{modalContent.description}</p>
-            <a
-              href={modalContent.videoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >
-              動画視聴
-            </a>
+      <div className="fixed inset-0 flex justify-center items-end p-4 z-50" onClick={closeModal}>
+        <div
+          className="bg-white p-6 rounded-t-lg shadow-lg w-full max-w-md m-4 animate-slideInUp"
+          onClick={(e) => e.stopPropagation()}
+          style={{ animation: 'slideInUp 0.5s ease-out forwards' }}
+        >
+          <h2 className="text-lg font-bold mb-2">{modalContent.title}</h2>
+          <p>{modalContent.description}</p>
+          {/* ボタンクリックでwatchVideo関数を呼び出します */}
+          <button
+            className="mt-4 bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            onClick={() => watchVideo(modalContent.videoUrl)}
+          >
+            動画視聴
+          </button>
             <button
               className="mt-4 bg-gray-500 hover:bg-gray-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-2"
               onClick={closeModal}
@@ -107,3 +111,4 @@ const LayoutPlan = () => {
 };
 
 export default LayoutPlan;
+
