@@ -1,7 +1,7 @@
 // components/LayoutPlan.tsx
 import Link from 'next/link';
 import Image from 'next/image';
-import layout from 'public/images/layout3.png';
+import layout from 'public/images/layout6.png';
 import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
 import balloonKitchen from 'public/images/balloon-kitchen.svg';
 import balloonLiving from 'public/images/balloon-living.svg';
