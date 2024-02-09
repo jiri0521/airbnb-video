@@ -3,8 +3,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import layout from 'public/images/kitchen3.webp';
-import ToromiCat from 'public/images/猫とろみ.png';
-import MealCat from 'public/images/ねこ食べさせ方.png';
+import ToromiCat from 'public/images/ToromiCat.png';
+import MealCat from 'public/images/MealCat.png';
 import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
 import balloonKitchen from 'public/images/balloon-kitchen.svg';
 import balloonLiving from 'public/images/balloon-living.svg';
