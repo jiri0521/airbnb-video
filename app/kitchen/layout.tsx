@@ -50,7 +50,7 @@ const LayoutPlan = () => {
       <div className="absolute top-0 left-0 w-full h-full">
        
         {/* div要素に 'balloon' スタイルクラスとアニメーションを適用します */}         
-        <div className="cursor-pointer" onClick={() => openModal({ title: 'とろみの付け方', description: '言語聴覚士のくりちゃんがお茶にとろみをつける方法を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/6531e81803f3d1b1705b8d45' })}>               
+        <div className="cursor-pointer" onClick={() => openModal({ title: 'とろみの付け方', description: '言語聴覚士のくりちゃんがお茶にとろみをつける方法を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/659743d7ecfec5c8548a5770' })}>               
                
                 <Image src={ToromiCat} alt="ToromiCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '28%', left: '48%', width: '15%', height: '15%' }} />            
         
