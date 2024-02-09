@@ -72,7 +72,7 @@ const LayoutPlan = () => {
        
        </div>
        
-       <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドから車椅子へ移乗', description: '作業療法士のウッチーがベッドから車椅子への移り方を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64bca3ba117bf893ebfae66e' })}>               
+       <div className="cursor-pointer" onClick={() => openModal({ title: '車椅子からベッドへ移乗', description: '作業療法士のウッチーが車椅子からベッドへの移り方を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64bca3ba117bf893ebfae66e' })}>               
                
                <Image src={BedChairCat} alt="BedChairCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '60%', left: '30%', width: '15%', height: '15%' }} />            
        
