@@ -18,15 +18,17 @@ import { useRouter } from 'next/navigation';
 
 interface ModalContent {
   title: string;
+  target: string;
   description: string;
   videoUrl: string;
+  imageUrl: string;
 }
 
 
 const LayoutPlan = () => {
   const router = useRouter();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState<ModalContent>({ title: '', description: '',videoUrl:''});
+  const [modalContent, setModalContent] = useState<ModalContent>({ title: '', target:'', description: '',videoUrl:'',imageUrl:''});
 
   const openModal = (content: ModalContent) => {
     setModalContent(content);
@@ -44,7 +46,7 @@ const LayoutPlan = () => {
 
   return (
     <>
-       <style jsx global>{`
+     <style jsx global>{`
       @keyframes slideInUp {
         from {
           transform: translateY(100%);
@@ -55,30 +57,30 @@ const LayoutPlan = () => {
       }
     `}</style>
     <div className="flex flex-col relative items-center">
-      【寝室】　猫をタッチしてみよう👆
+      【寝室】猫をタッチしてみよう
       <Image src={layout} alt="bedroom Layout" width={700} height={700} /> 
       <FloatingHomeButton /> 
       <div className="absolute top-0 left-0 w-full h-full">
        
         {/* div要素に 'balloon' スタイルクラスとアニメーションを適用します */}
-        <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドからの立ち上がり', description: '作業療法士のウッチーがベッドから立ち上がる時の注意点を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/652f85b6c8dd1a19ee4824f8' })}>               
+        <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドからの立ち上がり',target:'対象：足の不自由な方', description: '立ち上がる時の注意点を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/652f85b6c8dd1a19ee4824f8',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707719605/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-12_15.33.12_kje120.png' })}>               
                
                 <Image src={BedStandUpCat} alt="BedStandUpCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '55%', left: '60%', width: '15%', height: '15%' }} />            
         
         </div>
-        <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドからの起き上がり', description: '作業療法士のウッチーがベッドから起き上がる時の注意点を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/651a745b7ec24380c62fead2' })}>               
+        <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドからの起き上がり',target:'対象：足の不自由な方', description: 'ベッドから起き上がる時の注意点を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/651a745b7ec24380c62fead2',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707647689/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-11_19.32.13_m8ztqc.png' })}>               
                
                <Image src={BedWakeUpCat} alt="BedWakeUpCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '35%', left: '40%', width: '15%', height: '15%' }} />            
        
        </div>
         {/* 寝室へのリンク */}
-        <div className="cursor-pointer" onClick={() => openModal({ title: '寝返りの介助', description: '作業療法士のウッチーが寝返りの介助を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64ee9654112c914d6b83b609' })}>               
+        <div className="cursor-pointer" onClick={() => openModal({ title: '寝返りの介助',target:'対象：寝たきりの方、麻痺のある方', description: '寝返りの介助を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64ee9654112c914d6b83b609',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707719353/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-12_15.28.56_jhs3mc.png' })}>               
                
                <Image src={BedSleepCat} alt="BedSleepUpCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '40%', left: '55%', width: '15%', height: '15%' }} />            
        
        </div>
        
-       <div className="cursor-pointer" onClick={() => openModal({ title: '車椅子からベッドへ移乗', description: '作業療法士のウッチーが車椅子からベッドへの移り方を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64bca3ba117bf893ebfae66e' })}>               
+       <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドから車椅子へ移乗',target:'対象：車椅子の方,足の不自由な方', description: 'ベッドから車椅子への移り方を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64bca3ba117bf893ebfae66e',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707718455/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-07-23_12.46.38_fzrhia.png' })}>               
                
                <Image src={BedChairCat} alt="BedChairCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '60%', left: '30%', width: '15%', height: '15%' }} />            
        
@@ -90,13 +92,24 @@ const LayoutPlan = () => {
       © pixander 123RF Free Images
       </div>
       {isModalOpen && modalContent && (
-      <div className="fixed inset-0 flex justify-center items-end p-4 z-50" onClick={closeModal}>
-        <div
-          className="bg-white p-6 rounded-t-lg shadow-lg w-full max-w-md m-4 animate-slideInUp"
-          onClick={(e) => e.stopPropagation()}
-          style={{ animation: 'slideInUp 0.5s ease-out forwards' }}
-        >
-          <h2 className="text-lg font-bold mb-2">{modalContent.title}</h2>
+     <div className="fixed inset-0 flex justify-center items-end p-4 z-50" onClick={closeModal}>
+     <div
+       className="bg-white p-6 rounded-t-lg shadow-lg w-full max-w-md m-4 animate-slideInUp"
+       onClick={(e) => e.stopPropagation()}
+       style={{ animation: 'slideInUp 0.5s ease-out forwards' }}
+     >
+      {/* 丸い画像を表示 */}
+      <div className="flex items-center">
+         <Image
+           src={modalContent.imageUrl} // 画像のソースを動的に指定
+           alt="Modal Image"
+           width={80}   // 画像サイズは適宜調整してください
+           height={80}  // 画像サイズは適宜調整してください
+           className="rounded-full" // 画像を丸くする
+         />
+         <h2 className="text-lg font-bold mb-2 ml-4">{modalContent.title}</h2>
+       </div>
+       <p className='font-light text-gray-400'>{modalContent.target}</p>
           <p>{modalContent.description}</p>
           {/* ボタンクリックでwatchVideo関数を呼び出します */}
           <button
