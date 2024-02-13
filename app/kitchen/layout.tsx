@@ -59,13 +59,13 @@ const LayoutPlan = () => {
       <div className="absolute top-0 left-0 w-full h-full">
        
         {/* div要素に 'balloon' スタイルクラスとアニメーションを適用します */}         
-        <div className="cursor-pointer" onClick={() => openModal({ title: 'とろみの付け方', target: '飲み込みの弱い方（嚥下障害）', description: '飲み物へのとろみのつけ方を解説・実演します。とろみの濃度に合わせた注意点もお伝えします', videoUrl: 'https://air-video.vercel.app/listings/659743d7ecfec5c8548a5770',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707745213/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-12_22.39.49_xrubxk.png' })}>               
+        <div className="cursor-pointer" onClick={() => openModal({ title: 'とろみの付け方', target: '対象:飲み込みの弱い方（嚥下障害）', description: '飲み物へのとろみのつけ方を解説・実演します。とろみの濃度に合わせた注意点もお伝えします', videoUrl: 'https://air-video.vercel.app/listings/659743d7ecfec5c8548a5770',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707745213/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-12_22.39.49_xrubxk.png' })}>               
                
                 <Image src={ToromiCat} alt="ToromiCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '28%', left: '48%', width: '15%', height: '15%' }} />            
         
         </div>
         {/* 寝室へのリンク */}
-        <div className="cursor-pointer" onClick={() => openModal({ title: '食べさせ方', target:'食事の介助が必要な方', description: '食事の介助方法（食べさせ方）を解説・実演します。スプーンの使い方に注目です', videoUrl: 'https://air-video.vercel.app/listings/65669ddd6591799260e1d380',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707745924/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-12_22.51.48_uil1cs.png' })}>               
+        <div className="cursor-pointer" onClick={() => openModal({ title: '食べさせ方', target:'対象:食事の介助が必要な方', description: '食事の介助方法（食べさせ方）を解説・実演します。スプーンの使い方に注目です', videoUrl: 'https://air-video.vercel.app/listings/65669ddd6591799260e1d380',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707745924/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-12_22.51.48_uil1cs.png' })}>               
                
                <Image src={MealCat} alt="MealCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '50%', left: '60%', width: '15%', height: '15%' }} />            
        
