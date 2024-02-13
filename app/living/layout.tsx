@@ -71,7 +71,7 @@ const LayoutPlan = () => {
        </div>
         </div>
         
-        <div className="cursor-pointer" onClick={() => openModal({ title: '床からの立ち上がり',target:'足の不自由な方', description: '最小限の力で立ち上がらせる方法を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/65530c41b735a967abc092de',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707746239/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-12_22.57.06_djwair.png' })}>               
+        <div className="cursor-pointer" onClick={() => openModal({ title: '床からの立ち上がり',target:'対象:足の不自由な方', description: '最小限の力で立ち上がらせる方法を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/65530c41b735a967abc092de',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707746239/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-12_22.57.06_djwair.png' })}>               
                
                 <Image src={StandUpCat} alt="StandUpCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '55%', left: '58%', width: '15%', height: '15%' }} />            
         
