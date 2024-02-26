@@ -8,6 +8,7 @@ import BedWakeUpCat from 'public/images/BedWakeUpCat.png';
 import BedStandUpCat from 'public/images/BedStandUpCat.png';
 import BedSleepCat from 'public/images/BedSleepCat.png';
 import BedChairCat from 'public/images/BedChairCat.png';
+import BedRayBackCat from 'public/images/BedLayBackCat.png';
 import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
 import balloonKitchen from 'public/images/balloon-kitchen.svg';
 import balloonLiving from 'public/images/balloon-living.svg';
@@ -85,7 +86,11 @@ const LayoutPlan = () => {
                <Image src={BedChairCat} alt="BedChairCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '60%', left: '30%', width: '15%', height: '15%' }} />            
        
        </div>
-
+      <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドに座っている人を寝かせる',target:'対象：麻痺のある方,足の不自由な方', description: 'ベッドに座っている人を寝かせるコツを実演・解説します', videoUrl: 'https://air-video.vercel.app/listings/65dbda9be4dd198d80e86a53',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1708907890/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-26_9.37.43_noomth.png' })}>               
+               
+               <Image src={BedRayBackCat} alt="BedRayBckCat" width={80} height={80} className='animate-wiggle' style={{ position: 'absolute', top: '50%', left: '45%', width: '10%', height: '10%' }} />            
+       
+       </div>
       </div>
      
       <div className='text-gray-400'>
