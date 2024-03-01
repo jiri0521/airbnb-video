@@ -9,6 +9,7 @@ import DeepSitDownCat from 'public/images/DeepSitDownCat.png';
 import StandUpCat from 'public/images/StandUpFloorCat.png';
 import LivingTshirtsCat from 'public/images/LivingTshirtsCat.png';
 import LivingKaburiCat from 'public/images/LivingKaburiCat.png';
+import LivingPantsCat from 'public/images/LivingPantsCat.png';
 import FloatingHomeButton from '../components/FloatingHomeButton';
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -90,6 +91,12 @@ const LayoutPlan = () => {
                <Image src={LivingKaburiCat} alt="LivingKaburiCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '60%', left: '45%', width: '15%', height: '15%' }} />            
        
        </div>
+      <div className="cursor-pointer" onClick={() => openModal({ title: '【近日公開】寝たままズボンの着替え',target:'対象：麻痺のある方', description: '寝たままズボンを着替える方法を解説・実演します', videoUrl: 'https://air-video.vercel.app/living',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1709273984/%E7%84%A1%E9%A1%8C-35_b3otw6.png' })}>               
+               
+               <Image src={LivingPantsCat} alt="LivingPantsCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '45%', left: '45%', width: '15%', height: '15%' }} />            
+       
+       </div>
+      
       <div className='text-gray-400'>
       © pixander 123RF Free Images
       </div>
