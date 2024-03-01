@@ -9,7 +9,7 @@ import BedStandUpCat from 'public/images/BedStandUpCat.png';
 import BedSleepCat from 'public/images/BedSleepCat.png';
 import BedChairCat from 'public/images/BedChairCat.png';
 import BedRayBackCat from 'public/images/BedLayBackCat.png';
-import BedCatStandUpWheelChair from 'public/images/BedCatStandUpWheelChair.png';
+import BedCatStandUpWheelChair from 'public/images/BedCatStandUpWheelChair2.png';
 import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
 import balloonKitchen from 'public/images/balloon-kitchen.svg';
 import balloonLiving from 'public/images/balloon-living.svg';
