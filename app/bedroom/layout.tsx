@@ -82,7 +82,7 @@ const LayoutPlan = () => {
        
        </div>
        
-       <div className="cursor-pointer" onClick={() => openModal({ title: '車椅子からベッドへ移乗',target:'対象：車椅子の方,足の不自由な方', description: 'ベッドから車椅子への移り方を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64bca3ba117bf893ebfae66e',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707718455/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-07-23_12.46.38_fzrhia.png' })}>               
+       <div className="cursor-pointer" onClick={() => openModal({ title: '車椅子からベッドへ移乗',target:'対象：車椅子の方,足の不自由な方', description: '車椅子からベッドへの移り方を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64bca3ba117bf893ebfae66e',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707718455/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-07-23_12.46.38_fzrhia.png' })}>               
                
                <Image src={BedChairCat} alt="BedChairCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '60%', left: '33%', width: '13%', height: '13%' }} />            
        
