@@ -5,6 +5,7 @@ import Image from 'next/image';
 import layout from 'public/images/kitchen3.webp';
 import ToromiCat from 'public/images/ToromiCat.png';
 import MealCat from 'public/images/MealCat.png';
+import CatToromiMilk from 'public/images/CatToromiMilk.png';
 import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
 import balloonKitchen from 'public/images/balloon-kitchen.svg';
 import balloonLiving from 'public/images/balloon-living.svg';
@@ -71,9 +72,10 @@ const LayoutPlan = () => {
        
        </div>
 
-        <Link href="/?category=栄養">
-        <div className='w-full h-full animate-wiggle text-sm text-white bg-red-400 flex items-center justify-center' style={{ position: 'absolute', top: '55%', left: '18%', width: '15%', height: '15%' }}>乳製品のとろみの付け方</div>
-        </Link>
+        <div className="cursor-pointer" onClick={() => openModal({ title: '【近日公開】乳製品のとろみの付け方', target:'対象：飲み込みの弱い方（嚥下障害）', description: '乳製品へのとろみのつけ方を解説・実演します。', videoUrl: 'https://air-video.vercel.app/kitchen',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1709262177/%E7%84%A1%E9%A1%8C-25_2_uejvvz.png' })}>               
+               <Image src={CatToromiMilk} alt="CatToromiMilk" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '55%', left: '18%', width: '15%', height: '15%' }} />            
+              
+       </div>
       </div>
      
       <div className='text-gray-400'>
