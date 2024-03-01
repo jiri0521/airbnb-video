@@ -9,6 +9,7 @@ import BedStandUpCat from 'public/images/BedStandUpCat.png';
 import BedSleepCat from 'public/images/BedSleepCat.png';
 import BedChairCat from 'public/images/BedChairCat.png';
 import BedRayBackCat from 'public/images/BedLayBackCat.png';
+import BedCatStandUpWheelChair from 'public/images/BedCatStandUpWheelChair.png';
 import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
 import balloonKitchen from 'public/images/balloon-kitchen.svg';
 import balloonLiving from 'public/images/balloon-living.svg';
@@ -45,7 +46,7 @@ const LayoutPlan = () => {
     router.push(url); // 指定したURLに遷移
   };
 
-  return (
+ return (
     <>
      <style jsx global>{`
       @keyframes slideInUp {
@@ -77,18 +78,25 @@ const LayoutPlan = () => {
         {/* 寝室へのリンク */}
         <div className="cursor-pointer" onClick={() => openModal({ title: '寝返りの介助',target:'対象：寝たきりの方、麻痺のある方', description: '寝返りの介助を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64ee9654112c914d6b83b609',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707719353/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-12_15.28.56_jhs3mc.png' })}>               
                
-               <Image src={BedSleepCat} alt="BedSleepUpCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '40%', left: '55%', width: '15%', height: '15%' }} />            
+               <Image src={BedSleepCat} alt="BedSleepCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '40%', left: '55%', width: '15%', height: '15%' }} />            
        
        </div>
        
-       <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドから車椅子へ移乗',target:'対象：車椅子の方,足の不自由な方', description: 'ベッドから車椅子への移り方を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64bca3ba117bf893ebfae66e',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707718455/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-07-23_12.46.38_fzrhia.png' })}>               
+       <div className="cursor-pointer" onClick={() => openModal({ title: '車椅子からベッドへ移乗',target:'対象：車椅子の方,足の不自由な方', description: 'ベッドから車椅子への移り方を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/64bca3ba117bf893ebfae66e',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1707718455/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2023-07-23_12.46.38_fzrhia.png' })}>               
                
-               <Image src={BedChairCat} alt="BedChairCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '60%', left: '30%', width: '15%', height: '15%' }} />            
+               <Image src={BedChairCat} alt="BedChairCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '60%', left: '33%', width: '13%', height: '13%' }} />            
        
        </div>
-      <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドに座っている人を寝かせる',target:'対象：麻痺のある方,足の不自由な方', description: 'ベッドに座っている人を寝かせるコツを実演・解説します', videoUrl: 'https://air-video.vercel.app/listings/65dbda9be4dd198d80e86a53',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1708907890/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-26_9.37.43_noomth.png' })}>               
+
+       <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドに座っている人を寝かせる',target:'対象：麻痺のある方', description: 'ベッドに座っている人を寝かせるコツを実演・解説します', videoUrl: 'https://air-video.vercel.app/listings/65dbda9be4dd198d80e86a53',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1708907890/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-02-26_9.37.43_noomth.png' })}>               
                
-               <Image src={BedRayBackCat} alt="BedRayBckCat" width={80} height={80} className='animate-wiggle' style={{ position: 'absolute', top: '50%', left: '45%', width: '10%', height: '10%' }} />            
+               <Image src={BedRayBackCat} alt="BedRayBackCat" width={80} height={80} className='animate-wiggle' style={{ position: 'absolute', top: '50%', left: '45%', width: '10%', height: '10%' }} />            
+       
+       </div>
+
+       <div className="cursor-pointer" onClick={() => openModal({ title: 'ベッドから車椅子に移る',target:'対象：車椅子の方、足が不自由な方', description: 'ベッドに座っている人を車椅子に移す方法を解説します。コツを掴めば、最小限の力で行うことができます。体格差がある場合も安心して移動できますね。', videoUrl: 'https://air-video.vercel.app/listings/65e11bb015afd15011687dd7',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1709255025/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-03-01_10.03.07_yhxejg.png' })}>               
+               
+               <Image src={BedCatStandUpWheelChair} alt="BedRayBackCat" width={80} height={80} className='animate-wiggle' style={{ position: 'absolute', top: '65%', left: '45%', width: '15%', height: '15%' }} />            
        
        </div>
       </div>
@@ -139,7 +147,3 @@ const LayoutPlan = () => {
 };
 
 export default LayoutPlan;
-
-
-
-
