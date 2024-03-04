@@ -10,6 +10,15 @@ class MyDocument extends Document {
           <link rel="service-worker" href="/service-worker.js" />
           <link rel="apple-touch-icon" href="/icon-192x192.png"></link>
           <meta name="theme-color" content="#fff" />
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HG1DMWYQ2R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HG1DMWYQ2R');
+</script>
         </Head>
         <body>
           <Main />
