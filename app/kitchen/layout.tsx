@@ -72,7 +72,7 @@ const LayoutPlan = () => {
        
        </div>
 
-        <div className="cursor-pointer" onClick={() => openModal({ title: '乳製品のとろみの付け方', target:'対象：飲み込みの弱い方（嚥下障害）', description: '乳製品へのとろみのつけ方を解説・実演します。', videoUrl: 'https://air-video.vercel.app/listings/65f52f652616932ae895a1df',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1710568130/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-03-16_14.48.31_rao9jn.png' })}>               
+        <div className="cursor-pointer" onClick={() => openModal({ title: '乳製品のとろみの付け方', target:'対象：飲み込みの弱い方（嚥下障害）', description: '乳製品へのとろみのつけ方を解説・実演します。', videoUrl: 'https://air-video.vercel.app/listings/65f52f652616932ae895a1df',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1710568376/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-03-16_14.52.13_gyi4wi.png' })}>               
                <Image src={CatToromiMilk} alt="CatToromiMilk" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '55%', left: '18%', width: '15%', height: '15%' }} />            
               
        </div>
