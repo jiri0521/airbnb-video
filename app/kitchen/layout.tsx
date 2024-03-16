@@ -72,7 +72,7 @@ const LayoutPlan = () => {
        
        </div>
 
-        <div className="cursor-pointer" onClick={() => openModal({ title: '【近日公開】乳製品のとろみの付け方', target:'対象：飲み込みの弱い方（嚥下障害）', description: '乳製品へのとろみのつけ方を解説・実演します。', videoUrl: 'https://air-video.vercel.app/kitchen',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1709262177/%E7%84%A1%E9%A1%8C-25_2_uejvvz.png' })}>               
+        <div className="cursor-pointer" onClick={() => openModal({ title: '乳製品のとろみの付け方', target:'対象：飲み込みの弱い方（嚥下障害）', description: '乳製品へのとろみのつけ方を解説・実演します。', videoUrl: 'https://air-video.vercel.app/listings/65f52f652616932ae895a1df',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1710567032/irnuuiy1mirvihzayncc.png' })}>               
                <Image src={CatToromiMilk} alt="CatToromiMilk" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '55%', left: '18%', width: '15%', height: '15%' }} />            
               
        </div>
