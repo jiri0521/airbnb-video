@@ -25,7 +25,7 @@ const A8NetAd: React.FC = () => {
           height={1}
         />
       </Link>
-       
+       <br></br>
     </div>
   );
 };
