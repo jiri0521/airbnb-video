@@ -17,6 +17,8 @@ const nextConfig = {
         domains: [
             "lh3.googleusercontent.com",
             "res.cloudinary.com",
+            "www25.a8.net",
+            "www12.a8.net"
         ]
     }
 }
