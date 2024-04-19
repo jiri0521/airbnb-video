@@ -11,7 +11,7 @@ import { SafeUser } from "@/app/types";
 
 import Avatar from "../Avatar";
 import ListingCategory from "./ListingCategory";
-
+import A8NetAd from '../A8netAd';
 
 const Map = dynamic(() => import('../Map'), { 
   ssr: false 
@@ -90,7 +90,8 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
       </div>
       
       <hr />
-    
+     <br></br>
+     <A8NetAd/>
     </div>
       
       
