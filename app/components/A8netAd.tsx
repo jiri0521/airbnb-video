@@ -16,7 +16,13 @@ const A8NetAd: React.FC = () => {
           alt=""
           width={300}
           height={250}
-        
+          />
+           <Image
+          className=''
+          src="https://www13.a8.net/0.gif?a8mat=3Z4U5E+G23X6A+5HQC+BXQOH"
+          alt=""
+          width={1}
+          height={1}
         />
       </Link>
        
