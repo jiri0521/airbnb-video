@@ -91,8 +91,11 @@ const ListingInfo: React.FC<ListingInfoProps> = ({
       
       <hr />
      <br></br>
-     <A8NetAd/>
+      <A8NetAd/>
+     <br></br>
+     <hr />
     </div>
+          
       
       
 </div>
