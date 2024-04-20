@@ -19,7 +19,8 @@ const nextConfig = {
             "res.cloudinary.com",
             "www25.a8.net",
             "www12.a8.net",
-            "www13.a8.net"
+            "www13.a8.net",
+            "hbb.afl.rakuten.co.jp"
         ]
     }
 }
