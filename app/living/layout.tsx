@@ -91,7 +91,7 @@ const LayoutPlan = () => {
                <Image src={LivingKaburiCat} alt="LivingKaburiCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '60%', left: '45%', width: '15%', height: '15%' }} />            
        
        </div>
-      <div className="cursor-pointer" onClick={() => openModal({ title: '【近日公開】寝たままズボンの着替え',target:'対象：麻痺のある方', description: '寝たままズボンを着替える方法を解説・実演します', videoUrl: 'https://air-video.vercel.app/living',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1709273984/%E7%84%A1%E9%A1%8C-35_b3otw6.png' })}>               
+   <div className="cursor-pointer" onClick={() => openModal({ title: '【お尻上げ】寝たままズボンの着替え',target:'対象：麻痺のある方', description: '寝たままズボンを着替える方法を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/665ec1e9fcff7858a46c7b95',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1717555936/2024-06-05_11.32.58_riu5wy.png' })}>               
                
                <Image src={LivingPantsCat} alt="LivingPantsCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '45%', left: '45%', width: '15%', height: '15%' }} />            
        
