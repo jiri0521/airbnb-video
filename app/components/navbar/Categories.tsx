@@ -16,69 +16,70 @@ import { usePathname, useSearchParams } from "next/navigation";
 export const categories = [
     {
         label: '',
-        icon: BiHomeAlt,
-        description: "ホーム"
+        icon:BiHomeAlt,
+        description: "This property has camping activities!"
     },
     {
-        label: '歩行',
-        icon: FaWalking,
-        description: "歩行の介助や気をつけるポイント"
-    }, 
+        label: '生活関連',
+        icon: FaHandHoldingMedical,
+        description: 'This property is in a spooky cave!'
+      },
+    //{
+      //  label: '歩行',
+      //  icon: FaWalking,
+      //  description: "This property is on an Island!"
+    //}, 
     {
         label: '車椅子',
         icon: TbWheelchair,
-        description: "車椅子の介助や移乗の方法"
+        description: "This property is close to beach!"
     },
     {
         label: 'ベッド',
         icon: FaBed,
-        description: "ベッド上でのケアのポイント"
+        description: "This property has windmills!"
     },
     {
         label: '栄養',
         icon: TbPacman,
-        description: "療養に必要な栄養管理について"
+        description: "This property is modern!"
     },
-    {
-        label: '薬',
-        icon: GiMedicines,
-        description: "薬の知識や服薬方法について"
-    },
-    {
-        label: '注射',
-        icon: BiInjection,
-        description: "注射や点滴について"
-    },
-    {
-        label: '処置',
-        icon: FaBriefcaseMedical,
-        description: "処置について"
-    },
-    {
-        label: '検査',
-        icon: FaXRay,
-        description: "レントゲンやCTなどの検査について"
-    },
-    {
-        label: '採血',
-        icon: GiDrippingTube,
-        description: "採血データの基本的な項目について"
-    },
-    {
-        label: '呼吸器',
-        icon: FaHeadSideMask,
-        description: "NPPVや人工呼吸器の基本的知識や使用方法について"
-    },
+    //{
+      //  label: '薬',
+      //  icon: GiMedicines,
+      //  description: "This property is the countryside!"
+    //},
+    //{
+      //  label: '注射',
+      //  icon: BiInjection,
+      //  description: "This property has a pool!"
+    //},
+    //{
+      //  label: '処置',
+      //  icon: FaBriefcaseMedical,
+      //  description: "This property has camping activities!"
+    //},
+    //{
+      //  label: '検査',
+      //  icon: FaXRay,
+      //  description: "This property has skiing activities!"
+    //},
+    //{
+      //  label: '採血',
+      //  icon: GiDrippingTube,
+      //  description: "This property is close to Lake!"
+    //},
+    //{
+     //   label: '呼吸器',
+     //   icon: FaHeadSideMask,
+     //   description: "This property is an a castle!"
+    //},
     {
         label: '筋トレ',
         icon: GiMuscleUp,
-        description: "筋力アップやエクササイズについて"
+        description: "This property has camping activities!"
     },
-    {
-        label: 'その他',
-        icon: FaHandHoldingMedical,
-        description: '在宅医療に関わるその他の項目'
-      }
+   
     ]
 
 
