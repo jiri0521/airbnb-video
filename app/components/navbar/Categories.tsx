@@ -22,7 +22,7 @@ export const categories = [
     {
         label: '生活関連',
         icon: FaHandHoldingMedical,
-        description: 'This property is in a spooky cave!'
+        description: '座る・立つ・歩く・着替えるなど生活に必要な動作の介助'
       },
     //{
       //  label: '歩行',
@@ -32,17 +32,17 @@ export const categories = [
     {
         label: '車椅子',
         icon: TbWheelchair,
-        description: "This property is close to beach!"
+        description: "車椅子の方の介助、車椅子の乗り降りなど"
     },
     {
         label: 'ベッド',
         icon: FaBed,
-        description: "This property has windmills!"
+        description: "ベッド上での介助、ベッドからの移動など"
     },
     {
         label: '栄養',
         icon: TbPacman,
-        description: "This property is modern!"
+        description: "食事の介助、誤嚥の注意ポイント、口腔ケアなど"
     },
     //{
       //  label: '薬',
@@ -77,7 +77,7 @@ export const categories = [
     {
         label: '筋トレ',
         icon: GiMuscleUp,
-        description: "This property has camping activities!"
+        description: "体の鍛え方や効果的なストレッチについて"
     },
    
     ]
