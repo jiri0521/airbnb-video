@@ -22,7 +22,7 @@ export const categories = [
     {
         label: '生活関連',
         icon: FaHandHoldingMedical,
-        description: '座る・立つ・歩く・着替えるなど生活に必要な動作の介助'
+        description: '座る・立つ・歩く・着替えるなど'
       },
     //{
       //  label: '歩行',
@@ -32,17 +32,17 @@ export const categories = [
     {
         label: '車椅子',
         icon: TbWheelchair,
-        description: "車椅子の方の介助、車椅子の乗り降りなど"
+        description: "車椅子の方の介助"
     },
     {
         label: 'ベッド',
         icon: FaBed,
-        description: "ベッド上での介助、ベッドからの移動など"
+        description: "ベッド上での介助"
     },
     {
         label: '栄養',
         icon: TbPacman,
-        description: "食事の介助、誤嚥の注意ポイント、口腔ケアなど"
+        description: "食事の介助"
     },
     //{
       //  label: '薬',
@@ -77,7 +77,7 @@ export const categories = [
     {
         label: '筋トレ',
         icon: GiMuscleUp,
-        description: "体の鍛え方や効果的なストレッチについて"
+        description: "鍛え方。ストレッチ"
     },
    
     ]
