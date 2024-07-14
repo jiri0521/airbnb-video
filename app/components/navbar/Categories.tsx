@@ -32,12 +32,12 @@ export const categories = [
     {
         label: '車椅子',
         icon: TbWheelchair,
-        description: "車椅子の方の介助"
+        description: "麻痺や筋力低下がある方"
     },
     {
         label: 'ベッド',
         icon: FaBed,
-        description: "ベッド上での介助"
+        description: "麻痺や筋力低下がある方"
     },
     {
         label: '栄養',
