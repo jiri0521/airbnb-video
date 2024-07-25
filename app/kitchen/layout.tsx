@@ -57,6 +57,7 @@ const LayoutPlan = () => {
     `}</style>
     <div className="flex flex-col relative items-center">
       【キッチン】猫をタッチしてみよう
+      <div className="w-[700px] h-[700px] relative">
       <Image src={layout} alt="bedroom Layout" width={700} height={700} /> 
       <FloatingHomeButton /> 
       <div className="absolute top-0 left-0 w-full h-full">
@@ -75,7 +76,7 @@ const LayoutPlan = () => {
        </div>
 
         <div className="cursor-pointer" onClick={() => openModal({ title: '乳製品のとろみの付け方', target:'対象：飲み込みの弱い方（嚥下障害）', description: '乳製品へのとろみのつけ方を解説・実演します。', videoUrl: 'https://air-video.vercel.app/listings/65f52f652616932ae895a1df',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1710568376/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-03-16_14.52.13_gyi4wi.png' })}>               
-               <Image src={CatToromiMilk} alt="CatToromiMilk" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '55%', left: '18%', height: '15%' }} />            
+               <Image src={CatToromiMilk} alt="CatToromiMilk" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '55%', left: '25%', height: '15%' }} />            
               
        </div>
          <div className="cursor-pointer" onClick={() => openModal({ title: '誤嚥サインの見つけ方', target:'対象：飲み込みの弱い方（嚥下障害）', description: '誤嚥サインの見つけ方を解説します。3つの例をごお紹介します。', videoUrl: 'https://air-video.vercel.app/listings/669229df990b56598fce8470',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1721885368/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-07-25_14.26.55_ffysri.png' })}>               
@@ -127,7 +128,7 @@ const LayoutPlan = () => {
        
      
     </div>
-    
+    </div>
     
   </>);
 };
