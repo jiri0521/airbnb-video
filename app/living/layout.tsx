@@ -58,6 +58,7 @@ const LayoutPlan = () => {
     `}</style>
     <div className="flex flex-col relative items-center">
       【居間】猫をタッチしてみよう
+      <div className="w-[700px] h-[700px] relative">
       <Image src={layout} alt="bedroom Layout" width={700} height={700} /> 
       
       <FloatingHomeButton /> 
@@ -96,7 +97,7 @@ const LayoutPlan = () => {
                <Image src={LivingPantsCat} alt="LivingPantsCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '45%', left: '45%', width: '15%', height: '15%' }} />            
        
        </div>
-      
+      </div>
       <div className='text-gray-400'>
       © pixander 123RF Free Images
       </div>
