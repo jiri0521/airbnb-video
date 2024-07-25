@@ -60,6 +60,7 @@ const LayoutPlan = () => {
     `}</style>
     <div className="flex flex-col relative items-center">
       【寝室】猫をタッチしてみよう
+      <div className="w-[700px] h-[700px] relative">
       <Image src={layout} alt="bedroom Layout" width={700} height={700} /> 
       <FloatingHomeButton /> 
       <div className="absolute top-0 left-0 w-full h-full">
@@ -100,7 +101,7 @@ const LayoutPlan = () => {
        
        </div>
       </div>
-     
+     </div>
       <div className='text-gray-400'>
       © pixander 123RF Free Images
       </div>
