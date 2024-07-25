@@ -79,7 +79,7 @@ const LayoutPlan = () => {
                <Image src={CatToromiMilk} alt="CatToromiMilk" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '55%', left: '25%', height: '15%' }} />            
               
        </div>
-         <div className="cursor-pointer" onClick={() => openModal({ title: '誤嚥サインの見つけ方', target:'対象：飲み込みの弱い方（嚥下障害）', description: '誤嚥サインの見つけ方を解説します。3つの例をごお紹介します。', videoUrl: 'https://air-video.vercel.app/listings/669229df990b56598fce8470',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1721885368/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-07-25_14.26.55_ffysri.png' })}>               
+         <div className="cursor-pointer" onClick={() => openModal({ title: '誤嚥サインの見つけ方', target:'対象：飲み込みの弱い方（嚥下障害）', description: '誤嚥サインの見つけ方を解説します。3つの例を紹介します。', videoUrl: 'https://air-video.vercel.app/listings/669229df990b56598fce8470',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1721885368/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-07-25_14.26.55_ffysri.png' })}>               
                <Image src={GoenCat} alt="GoenCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '45%', left: '40%', height: '15%' }} />            
               
        </div>
