@@ -87,7 +87,7 @@ const LayoutPlan = () => {
        
        </div>
 
-       <div className="cursor-pointer" onClick={() => openModal({ title: '【近日公開】羽織服の着替え',target:'対象：麻痺のある方,足の不自由な方', description: '車椅子に座ったまま羽織服を着替える方法を解説・実演します', videoUrl: 'https://air-video.vercel.app/living',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1709273168/%E7%84%A1%E9%A1%8C-32_1_ifbvmz.png' })}>               
+     <div className="cursor-pointer" onClick={() => openModal({ title: '羽織服の着替え',target:'対象：麻痺のある方,足の不自由な方', description: '車椅子に座ったまま羽織服を着替える方法を解説・実演します', videoUrl: 'https://air-video.vercel.app/listings/66c04383aaa7db4e9c6a5c99',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1724052510/haori_o6jaao.png' })}>               
                
                <Image src={LivingKaburiCat} alt="LivingKaburiCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '60%', left: '45%', width: '15%', height: '15%' }} />            
        
