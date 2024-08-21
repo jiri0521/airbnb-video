@@ -18,7 +18,7 @@ const SearchInput = () => {
         // setSuggestions(data.suggestions);
         
         // デモ用の固定候補
-        const demoSuggestions = ["車椅子", "ベッド", "食べさせ方" , "立ち上がり", "誤嚥サインの見つけ方", "とろみの付け方", "ズボンの脱ぎ履き","座っている人","寝かせる","座る動き","乗り移る" ];
+        const demoSuggestions = ["車椅子", "ベッド", "食べさせ方" , "立ち上がり", "誤嚥サインの見つけ方", "とろみの付け方", "ズボンの脱ぎ履き","座っている人","寝かせる","座る動き","乗り移る","口腔ケア","歯磨き" ];
         setSuggestions(demoSuggestions.filter(s => s.includes(query)));
     };
 
