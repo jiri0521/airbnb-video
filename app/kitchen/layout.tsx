@@ -7,6 +7,7 @@ import ToromiCat from 'public/images/ToromiCat.png';
 import MealCat from 'public/images/MealCat.png';
 import CatToromiMilk from 'public/images/CatToromiMilk.png';
 import GoenCat from 'public/images/GoenCat.png';
+import MouthCareCat from 'public/images/MouthCareCat.png';
 
 import balloonBed from 'public/images/balloon-bed.svg'; // インポート確認済み
 import balloonKitchen from 'public/images/balloon-kitchen.svg';
@@ -83,7 +84,10 @@ const LayoutPlan = () => {
                <Image src={GoenCat} alt="GoenCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '45%', left: '40%', height: '15%' }} />            
               
        </div>
-      
+      <div className="cursor-pointer" onClick={() => openModal({ title: '口腔ケア', target:'対象：自分で歯磨きが難しい方', description: '口腔ケアをご紹介します。肺炎予防にも効果的です。', videoUrl: 'https://air-video.vercel.app/listings/66a88f12031ee0563ab753ef',imageUrl:'https://res.cloudinary.com/dboemqskb/image/upload/v1724206760/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2024-08-21_11.18.49_gc2xy8.png' })}>               
+               <Image src={MouthCareCat} alt="MouthCareCat" width={100} height={100} className='animate-wiggle' style={{ position: 'absolute', top: '65%', left: '35%', height: '15%' }} />            
+              
+       </div>
       </div>
      
       <div className='text-gray-400'>
