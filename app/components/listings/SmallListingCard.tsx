@@ -111,7 +111,7 @@ const ListingCard: React.FC<ListingCardProps> = ({
             src={data.imageSrc}
             alt="Listing"
           />
-        
+          
         </div>
         <div className="font-semibold text-lg">
           {data.title}
